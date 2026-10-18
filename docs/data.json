@@ -1,0 +1,4427 @@
+{
+ "meta": {
+  "title": "Cancer Pathway Atlas",
+  "version": "1.1.0",
+  "generated": "2026-10-18",
+  "note": "Frequencies are approximate shares of primary tumours; see the paper references for exact values."
+ },
+ "refs": [
+  [
+   "Sanchez-Vega F, et al. Oncogenic signaling pathways in The Cancer Genome Atlas. Cell 173:321–337 (2018)",
+   "10.1016/j.cell.2018.03.035"
+  ],
+  [
+   "Bailey MH, et al. Comprehensive characterization of cancer driver genes and mutations. Cell 173:371–385 (2018)",
+   "10.1016/j.cell.2018.02.060"
+  ],
+  [
+   "Hanahan D, Weinberg RA. The hallmarks of cancer. Cell 100:57–70 (2000)",
+   "10.1016/s0092-8674(00)81683-9"
+  ],
+  [
+   "Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation. Cell 144:646–674 (2011)",
+   "10.1016/j.cell.2011.02.013"
+  ],
+  [
+   "Hanahan D. Hallmarks of cancer: new dimensions. Cancer Discov 12:31–46 (2022)",
+   "10.1158/2159-8290.CD-21-1059"
+  ],
+  [
+   "Vogelstein B, et al. Cancer genome landscapes. Science 339:1546–1558 (2013)",
+   "10.1126/science.1235122"
+  ],
+  [
+   "ICGC/TCGA PCAWG Consortium. Pan-cancer analysis of whole genomes. Nature 578:82–93 (2020)",
+   "10.1038/s41586-020-1969-6"
+  ],
+  [
+   "Alexandrov LB, et al. The repertoire of mutational signatures in human cancer. Nature 578:94–101 (2020)",
+   "10.1038/s41586-020-1943-3"
+  ],
+  [
+   "Kandoth C, et al. Mutational landscape and significance across 12 major cancer types. Nature 502:333–339 (2013)",
+   "10.1038/nature12634"
+  ],
+  [
+   "Lawrence MS, et al. Discovery and saturation analysis of cancer genes across 21 tumour types. Nature 505:495–501 (2014)",
+   "10.1038/nature12912"
+  ],
+  [
+   "Zack TI, et al. Pan-cancer patterns of somatic copy number alteration. Nat Genet 45:1134–1140 (2013)",
+   "10.1038/ng.2760"
+  ],
+  [
+   "Martincorena I, et al. Universal patterns of selection in cancer and somatic tissues. Cell 171:1029–1041 (2017)",
+   "10.1016/j.cell.2017.09.042"
+  ],
+  [
+   "Knijnenburg TA, et al. Genomic and molecular landscape of DNA damage repair deficiency across The Cancer Genome Atlas. Cell Rep 23:239–254 (2018)",
+   "10.1016/j.celrep.2018.03.076"
+  ],
+  [
+   "Thorsson V, et al. The immune landscape of cancer. Immunity 48:812–830 (2018)",
+   "10.1016/j.immuni.2018.03.023"
+  ],
+  [
+   "Hoadley KA, et al. Cell-of-origin patterns dominate the molecular classification of 10,000 tumors from 33 types of cancer. Cell 173:291–304 (2018)",
+   "10.1016/j.cell.2018.03.022"
+  ],
+  [
+   "Kadoch C, et al. Proteomic and bioinformatic analysis of mammalian SWI/SNF complexes identifies extensive roles in human malignancy. Nat Genet 45:592–601 (2013)",
+   "10.1038/ng.2628"
+  ],
+  [
+   "McGranahan N, et al. Allele-specific HLA loss and immune escape in lung cancer evolution. Cell 171:1259–1271 (2017)",
+   "10.1016/j.cell.2017.10.001"
+  ],
+  [
+   "Knudson AG. Mutation and cancer: statistical study of retinoblastoma. PNAS 68:820–823 (1971)",
+   "10.1073/pnas.68.4.820"
+  ],
+  [
+   "Zehir A, et al. Mutational landscape of metastatic cancer revealed from prospective clinical sequencing of 10,000 patients. Nat Med 23:703–713 (2017)",
+   "10.1038/nm.4333"
+  ],
+  [
+   "Huang FW, et al. Highly recurrent TERT promoter mutations in human melanoma. Science 339:957–959 (2013)",
+   "10.1126/science.1229259"
+  ],
+  [
+   "Horn S, et al. TERT promoter mutations in familial and sporadic melanoma. Science 339:959–961 (2013)",
+   "10.1126/science.1230062"
+  ],
+  [
+   "Dang L, et al. Cancer-associated IDH1 mutations produce 2-hydroxyglutarate. Nature 462:739–744 (2009)",
+   "10.1038/nature08617"
+  ],
+  [
+   "Farmer H, et al. Targeting the DNA repair defect in BRCA mutant cells as a therapeutic strategy. Nature 434:917–921 (2005)",
+   "10.1038/nature03445"
+  ],
+  [
+   "Martincorena I, et al. High burden and pervasive positive selection of somatic mutations in normal human skin. Science 348:880–886 (2015)",
+   "10.1126/science.aaa6806"
+  ],
+  [
+   "Weinstein IB. Addiction to oncogenes — the Achilles heal of cancer. Science 297:63–64 (2002)",
+   "10.1126/science.1073096"
+  ],
+  [
+   "Li Y, et al. Patterns of somatic structural variation in human cancer genomes. Nature 578:112–121 (2020)",
+   "10.1038/s41586-019-1913-9"
+  ],
+  [
+   "Davies H, et al. Mutations of the BRAF gene in human cancer. Nature 417:949–954 (2002)",
+   "10.1038/nature00766"
+  ],
+  [
+   "Lynch TJ, et al. Activating mutations in the epidermal growth factor receptor underlying responsiveness of non-small-cell lung cancer to gefitinib. N Engl J Med 350:2129–2139 (2004)",
+   "10.1056/NEJMoa040938"
+  ],
+  [
+   "Paez JG, et al. EGFR mutations in lung cancer: correlation with clinical response to gefitinib therapy. Science 304:1497–1500 (2004)",
+   "10.1126/science.1099314"
+  ],
+  [
+   "Ostrem JM, et al. K-Ras(G12C) inhibitors allosterically control GTP affinity and effector interactions. Nature 503:548–551 (2013)",
+   "10.1038/nature12796"
+  ],
+  [
+   "Canon J, et al. The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity. Nature 575:217–223 (2019)",
+   "10.1038/s41586-019-1694-1"
+  ],
+  [
+   "Skoulidis F, et al. Sotorasib for lung cancers with KRAS p.G12C mutation. N Engl J Med 384:2371–2381 (2021)",
+   "10.1056/NEJMoa2103695"
+  ],
+  [
+   "Slamon DJ, et al. Human breast cancer: correlation of relapse and survival with amplification of the HER-2/neu oncogene. Science 235:177–182 (1987)",
+   "10.1126/science.3798106"
+  ],
+  [
+   "Soda M, et al. Identification of the transforming EML4-ALK fusion gene in non-small-cell lung cancer. Nature 448:561–566 (2007)",
+   "10.1038/nature05945"
+  ],
+  [
+   "Samuels Y, et al. High frequency of mutations of the PIK3CA gene in human cancers. Science 304:554 (2004)",
+   "10.1126/science.1096502"
+  ],
+  [
+   "André F, et al. Alpelisib for PIK3CA-mutated, hormone receptor-positive advanced breast cancer. N Engl J Med 380:1929–1940 (2019)",
+   "10.1056/NEJMoa1813904"
+  ],
+  [
+   "Turner NC, et al. Capivasertib in hormone receptor-positive advanced breast cancer. N Engl J Med 388:2058–2070 (2023)",
+   "10.1056/NEJMoa2214131"
+  ],
+  [
+   "Li J, et al. PTEN, a putative protein tyrosine phosphatase gene mutated in human brain, breast, and prostate cancer. Science 275:1943–1947 (1997)",
+   "10.1126/science.275.5308.1943"
+  ],
+  [
+   "Serrano M, Hannon GJ, Beach D. A new regulatory motif in cell-cycle control causing specific inhibition of cyclin D/CDK4. Nature 366:704–707 (1993)",
+   "10.1038/366704a0"
+  ],
+  [
+   "Finn RS, et al. Palbociclib and letrozole in advanced breast cancer. N Engl J Med 375:1925–1936 (2016)",
+   "10.1056/NEJMoa1607303"
+  ],
+  [
+   "Weinberg RA. The retinoblastoma protein and cell cycle control. Cell 81:323–330 (1995)",
+   "10.1016/0092-8674(95)90385-2"
+  ],
+  [
+   "Oliner JD, et al. Amplification of a gene encoding a p53-associated protein in human sarcomas. Nature 358:80–83 (1992)",
+   "10.1038/358080a0"
+  ],
+  [
+   "Momand J, et al. The mdm-2 oncogene product forms a complex with the p53 protein and inhibits p53-mediated transactivation. Cell 69:1237–1245 (1992)",
+   "10.1016/0092-8674(92)90644-r"
+  ],
+  [
+   "Vassilev LT, et al. In vivo activation of the p53 pathway by small-molecule antagonists of MDM2. Science 303:844–848 (2004)",
+   "10.1126/science.1092472"
+  ],
+  [
+   "Kastenhuber ER, Lowe SW. Putting p53 in context. Cell 170:1062–1078 (2017)",
+   "10.1016/j.cell.2017.08.028"
+  ],
+  [
+   "Dang CV. MYC on the path to cancer. Cell 149:22–35 (2012)",
+   "10.1016/j.cell.2012.03.003"
+  ],
+  [
+   "Nusse R, Varmus HE. Many tumors induced by the mouse mammary tumor virus contain a provirus integrated in the same region of the host genome. Cell 31:99–109 (1982)",
+   "10.1016/0092-8674(82)90409-3"
+  ],
+  [
+   "Korinek V, et al. Constitutive transcriptional activation by a β-catenin–Tcf complex in APC−/− colon carcinoma. Science 275:1784–1787 (1997)",
+   "10.1126/science.275.5307.1784"
+  ],
+  [
+   "Morin PJ, et al. Activation of β-catenin–Tcf signaling in colon cancer by mutations in β-catenin or APC. Science 275:1787–1790 (1997)",
+   "10.1126/science.275.5307.1787"
+  ],
+  [
+   "Nusse R, Clevers H. Wnt/β-catenin signaling, disease, and emerging therapeutic modalities. Cell 169:985–999 (2017)",
+   "10.1016/j.cell.2017.05.016"
+  ],
+  [
+   "Weng AP, et al. Activating mutations of NOTCH1 in human T cell acute lymphoblastic leukemia. Science 306:269–271 (2004)",
+   "10.1126/science.1102160"
+  ],
+  [
+   "Agrawal N, et al. Exome sequencing of head and neck squamous cell carcinoma reveals inactivating mutations in NOTCH1. Science 333:1154–1157 (2011)",
+   "10.1126/science.1206923"
+  ],
+  [
+   "Gounder M, et al. Nirogacestat, a γ-secretase inhibitor for desmoid tumors. N Engl J Med 388:898–912 (2023)",
+   "10.1056/NEJMoa2210140"
+  ],
+  [
+   "Zhao B, et al. Inactivation of YAP oncoprotein by the Hippo pathway is involved in cell contact inhibition and tissue growth control. Genes Dev 21:2747–2761 (2007)",
+   "10.1101/gad.1602907"
+  ],
+  [
+   "Hahn SA, et al. DPC4, a candidate tumor suppressor gene at human chromosome 18q21.1. Science 271:350–353 (1996)",
+   "10.1126/science.271.5247.350"
+  ],
+  [
+   "Markowitz S, et al. Inactivation of the type II TGF-β receptor in colon cancer cells with microsatellite instability. Science 268:1336–1338 (1995)",
+   "10.1126/science.7761852"
+  ],
+  [
+   "Massagué J. TGFβ in cancer. Cell 134:215–230 (2008)",
+   "10.1016/j.cell.2008.07.001"
+  ],
+  [
+   "Itoh K, et al. Keap1 represses nuclear activation of antioxidant responsive elements by Nrf2 through binding to the amino-terminal Neh2 domain. Genes Dev 13:76–86 (1999)",
+   "10.1101/gad.13.1.76"
+  ],
+  [
+   "Singh A, et al. Dysfunctional KEAP1–NRF2 interaction in non-small-cell lung cancer. PLoS Med 3:e420 (2006)",
+   "10.1371/journal.pmed.0030420"
+  ],
+  [
+   "Bryant HE, et al. Specific killing of BRCA2-deficient tumours with inhibitors of poly(ADP-ribose) polymerase. Nature 434:913–917 (2005)",
+   "10.1038/nature03443"
+  ],
+  [
+   "Le DT, et al. PD-1 blockade in tumors with mismatch-repair deficiency. N Engl J Med 372:2509–2520 (2015)",
+   "10.1056/NEJMoa1500596"
+  ],
+  [
+   "Le DT, et al. Mismatch repair deficiency predicts response of solid tumors to PD-1 blockade. Science 357:409–413 (2017)",
+   "10.1126/science.aan6733"
+  ],
+  [
+   "Robson M, et al. Olaparib for metastatic breast cancer in patients with a germline BRCA mutation. N Engl J Med 377:523–533 (2017)",
+   "10.1056/NEJMoa1706450"
+  ],
+  [
+   "Moore K, et al. Maintenance olaparib in patients with newly diagnosed advanced ovarian cancer. N Engl J Med 379:2495–2505 (2018)",
+   "10.1056/NEJMoa1810858"
+  ],
+  [
+   "Versteege I, et al. Truncating mutations of hSNF5/INI1 in aggressive paediatric cancer. Nature 394:203–206 (1998)",
+   "10.1038/28212"
+  ],
+  [
+   "Wiegand KC, et al. ARID1A mutations in endometriosis-associated ovarian carcinomas. N Engl J Med 363:1532–1543 (2010)",
+   "10.1056/NEJMoa1008433"
+  ],
+  [
+   "Varela I, et al. Exome sequencing identifies frequent mutation of the SWI/SNF complex gene PBRM1 in renal carcinoma. Nature 469:539–542 (2011)",
+   "10.1038/nature09639"
+  ],
+  [
+   "Bitler BG, et al. Synthetic lethality by targeting EZH2 methyltransferase activity in ARID1A-mutated cancers. Nat Med 21:231–238 (2015)",
+   "10.1038/nm.3799"
+  ],
+  [
+   "Kim NW, et al. Specific association of human telomerase activity with immortal cells and cancer. Science 266:2011–2015 (1994)",
+   "10.1126/science.7605428"
+  ],
+  [
+   "Heaphy CM, et al. Altered telomeres in tumors with ATRX and DAXX mutations. Science 333:425 (2011)",
+   "10.1126/science.1207313"
+  ],
+  [
+   "Vaux DL, Cory S, Adams JM. Bcl-2 gene promotes haemopoietic cell survival and cooperates with c-myc to immortalize pre-B cells. Nature 335:440–442 (1988)",
+   "10.1038/335440a0"
+  ],
+  [
+   "Souers AJ, et al. ABT-199, a potent and selective BCL-2 inhibitor, achieves antitumor activity while sparing platelets. Nat Med 19:202–208 (2013)",
+   "10.1038/nm.3048"
+  ],
+  [
+   "Roberts AW, et al. Targeting BCL2 with venetoclax in relapsed chronic lymphocytic leukemia. N Engl J Med 374:311–322 (2016)",
+   "10.1056/NEJMoa1513257"
+  ],
+  [
+   "DiNardo CD, et al. Azacitidine and venetoclax in previously untreated acute myeloid leukemia. N Engl J Med 383:617–629 (2020)",
+   "10.1056/NEJMoa2012971"
+  ],
+  [
+   "Leach DR, Krummel MF, Allison JP. Enhancement of antitumor immunity by CTLA-4 blockade. Science 271:1734–1736 (1996)",
+   "10.1126/science.271.5256.1734"
+  ],
+  [
+   "Zaretsky JM, et al. Mutations associated with acquired resistance to PD-1 blockade in melanoma. N Engl J Med 375:819–829 (2016)",
+   "10.1056/NEJMoa1604958"
+  ],
+  [
+   "Hodi FS, et al. Improved survival with ipilimumab in patients with metastatic melanoma. N Engl J Med 363:711–723 (2010)",
+   "10.1056/NEJMoa1003466"
+  ],
+  [
+   "Rizvi NA, et al. Mutational landscape determines sensitivity to PD-1 blockade in non-small cell lung cancer. Science 348:124–128 (2015)",
+   "10.1126/science.aaa1348"
+  ],
+  [
+   "Latif F, et al. Identification of the von Hippel–Lindau disease tumor suppressor gene. Science 260:1317–1320 (1993)",
+   "10.1126/science.8493574"
+  ],
+  [
+   "Maxwell PH, et al. The tumour suppressor protein VHL targets hypoxia-inducible factors for oxygen-dependent proteolysis. Nature 399:271–275 (1999)",
+   "10.1038/20459"
+  ],
+  [
+   "Jonasch E, et al. Belzutifan for renal cell carcinoma in von Hippel–Lindau disease. N Engl J Med 385:2036–2046 (2021)",
+   "10.1056/NEJMoa2103425"
+  ],
+  [
+   "Parsons DW, et al. An integrated genomic analysis of human glioblastoma multiforme. Science 321:1807–1812 (2008)",
+   "10.1126/science.1164382"
+  ],
+  [
+   "Mellinghoff IK, et al. Vorasidenib in IDH1- or IDH2-mutant low-grade glioma. N Engl J Med 389:589–601 (2023)",
+   "10.1056/NEJMoa2304194"
+  ],
+  [
+   "DiNardo CD, et al. Durable remissions with ivosidenib in IDH1-mutated relapsed or refractory AML. N Engl J Med 378:2386–2398 (2018)",
+   "10.1056/NEJMoa1716984"
+  ],
+  [
+   "Yoshida K, et al. Frequent pathway mutations of splicing machinery in myelodysplasia. Nature 478:64–69 (2011)",
+   "10.1038/nature10496"
+  ]
+ ],
+ "pathways": {
+  "rtk": {
+   "name": "RTK / RAS / MAPK",
+   "short": "RTK–RAS",
+   "fr": {
+    "v": 46,
+    "ver": true,
+    "lab": "46% median across types"
+   },
+   "refs": [
+    1,
+    2,
+    6,
+    25
+   ],
+   "mech": "Growth-factor receptors dimerise and trans-autophosphorylate. SHP2, GRB2 and SOS load GTP onto RAS; RAF dimers phosphorylate MEK, MEK phosphorylates ERK, and ERK switches on the immediate-early programme (AP-1, ETS, MYC stabilisation, cyclin D1) that carries a cell past the restriction point.",
+   "lesion": "Hotspot mutations lock RAS in the GTP-bound state (KRAS G12/G13/Q61) or let BRAF signal as a monomer (V600E). EGFR, ERBB2, MET and FGFR are amplified; ALK, ROS1, RET, NTRK and FGFR2/3 form kinase fusions; NF1, the RasGAP, is lost. RTK, RAS and RAF lesions are strongly mutually exclusive: one hit per tumour usually saturates the pathway [1].",
+   "where": "The most frequently altered pathway: a median 46% of tumours across 33 types, and 95% of melanoma, 84% of thyroid, 78% of pancreatic and 74% of lung adenocarcinoma [1].",
+   "vuln": "The founding case of oncogene addiction [25]. Inhibitors of EGFR, ALK, ROS1, RET, NTRK and BRAF+MEK; KRAS G12C inhibitors (sotorasib, adagrasib) with G12D and RAS(ON) inhibitors in trials; HER2 antibodies and antibody–drug conjugates. Relief of ERK-dependent negative feedback limits single agents.",
+   "steps": [
+    [
+     "A ligand activates its receptor",
+     "EGF, HGF, FGF or PDGF binds the extracellular domain. The receptors dimerise and their kinase domains phosphorylate each other's C-terminal tyrosines. Those phosphotyrosines become docking sites for SH2-domain adaptors (GRB2, SHC) and for the phosphatase SHP2.",
+     [
+      6
+     ]
+    ],
+    [
+     "RAS is loaded with GTP",
+     "GRB2 brings the exchange factor SOS to the membrane, where it swaps GDP for GTP on RAS. RAS is a binary switch: bound to GTP it is on. GTPase-activating proteins such as NF1 switch it off by speeding up its weak intrinsic GTPase.",
+     [
+      6
+     ]
+    ],
+    [
+     "RAF kinases dimerise",
+     "RAS-GTP recruits ARAF, BRAF and CRAF to the membrane and promotes RAF dimers. BRAF V600E skips this step and signals as a monomer. That is why first-generation BRAF inhibitors work on V600E tumours but can paradoxically activate wild-type RAF dimers in RAS-mutant cells.",
+     [
+      27
+     ]
+    ],
+    [
+     "MEK and ERK relay the signal",
+     "RAF phosphorylates MEK1/2, which phosphorylates ERK1/2 on its activation loop. ERK then phosphorylates hundreds of substrates, including ETS transcription factors, RSK and MYC (serine 62).",
+     [
+      6
+     ]
+    ],
+    [
+     "The nucleus commits to division",
+     "ERK induces FOS, cyclin D1 and MYC, which carry the cell through the G1 restriction point. ERK also induces DUSP and SPRY feedback inhibitors. When a drug blocks the pathway this feedback is released, so signalling partly recovers, which is the basis of adaptive resistance.",
+     [
+      6
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "Mutations lock the switch on. KRAS G12, G13 and Q61 impair GAP-driven GTP hydrolysis; EGFR kinase mutations and ERBB2 amplification make receptors constitutively active; the EML4–ALK fusion forces the kinase to dimerise. Dramatic responses to gefitinib in EGFR-mutant lung cancer showed that tumours depend on these lesions.",
+     [
+      28,
+      29,
+      33,
+      34,
+      25
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1987",
+     "HER2/neu amplification predicts relapse and shorter survival in breast cancer, the first link between an amplified oncogene and outcome.",
+     [
+      33
+     ]
+    ],
+    [
+     "2002",
+     "BRAF is mutated in about two thirds of melanomas, mostly at V600.",
+     [
+      27
+     ]
+    ],
+    [
+     "2004",
+     "Activating EGFR kinase-domain mutations explain which lung cancers respond to gefitinib.",
+     [
+      28,
+      29
+     ]
+    ],
+    [
+     "2007",
+     "EML4–ALK is a transforming fusion kinase in non-small-cell lung cancer.",
+     [
+      34
+     ]
+    ],
+    [
+     "2013",
+     "Covalent compounds that bind a pocket under switch II trap KRAS G12C in its inactive GDP state, ending the idea that RAS cannot be drugged.",
+     [
+      30
+     ]
+    ],
+    [
+     "2019–21",
+     "AMG 510 (sotorasib) regresses KRAS G12C tumours and boosts anti-tumour immunity; in CodeBreaK 100, 37% of patients with KRAS G12C lung cancer responded.",
+     [
+      31,
+      32
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Osimertinib",
+     "EGFR (incl. T790M)",
+     "EGFR-mutant NSCLC",
+     "A",
+     "2015",
+     []
+    ],
+    [
+     "Gefitinib, erlotinib, afatinib",
+     "EGFR",
+     "EGFR-mutant NSCLC",
+     "A",
+     "2003",
+     [
+      28,
+      29
+     ]
+    ],
+    [
+     "Amivantamab",
+     "EGFR–MET bispecific antibody",
+     "EGFR exon-20 insertion and common-mutation NSCLC",
+     "A",
+     "2021",
+     []
+    ],
+    [
+     "Cetuximab, panitumumab",
+     "EGFR antibody",
+     "RAS-wild-type colorectal; head and neck",
+     "A",
+     "2004",
+     []
+    ],
+    [
+     "Trastuzumab, pertuzumab",
+     "HER2 antibody",
+     "HER2-amplified breast and gastric cancer",
+     "A",
+     "1998",
+     [
+      33
+     ]
+    ],
+    [
+     "Trastuzumab deruxtecan",
+     "HER2 antibody–drug conjugate",
+     "HER2-positive and HER2-low breast; HER2-mutant NSCLC",
+     "A",
+     "2019",
+     []
+    ],
+    [
+     "Tucatinib, lapatinib, neratinib",
+     "HER2 kinase",
+     "HER2-positive breast cancer",
+     "A",
+     "2007",
+     []
+    ],
+    [
+     "Crizotinib, alectinib, brigatinib, lorlatinib",
+     "ALK",
+     "ALK-fusion NSCLC",
+     "A",
+     "2011",
+     [
+      34
+     ]
+    ],
+    [
+     "Entrectinib, repotrectinib, larotrectinib",
+     "ROS1 / NTRK",
+     "ROS1-fusion NSCLC; NTRK-fusion tumours (tissue-agnostic)",
+     "A",
+     "2018",
+     []
+    ],
+    [
+     "Selpercatinib, pralsetinib",
+     "RET",
+     "RET-fusion NSCLC and thyroid; RET-mutant medullary thyroid",
+     "A",
+     "2020",
+     []
+    ],
+    [
+     "Capmatinib, tepotinib",
+     "MET",
+     "MET exon-14 skipping NSCLC",
+     "A",
+     "2020",
+     []
+    ],
+    [
+     "Erdafitinib",
+     "FGFR1–4",
+     "FGFR3-altered urothelial carcinoma",
+     "A",
+     "2019",
+     []
+    ],
+    [
+     "Pemigatinib, futibatinib",
+     "FGFR2",
+     "FGFR2-fusion cholangiocarcinoma",
+     "A",
+     "2020",
+     []
+    ],
+    [
+     "Imatinib, avapritinib, ripretinib",
+     "KIT / PDGFRA",
+     "GIST (avapritinib for PDGFRA D842V)",
+     "A",
+     "2002",
+     []
+    ],
+    [
+     "Dabrafenib + trametinib",
+     "BRAF V600 + MEK",
+     "Melanoma, NSCLC, anaplastic thyroid; BRAF V600E tissue-agnostic",
+     "A",
+     "2013",
+     [
+      27
+     ]
+    ],
+    [
+     "Encorafenib + binimetinib or cetuximab",
+     "BRAF V600E (+ MEK or EGFR)",
+     "Melanoma; BRAF V600E colorectal",
+     "A",
+     "2018",
+     []
+    ],
+    [
+     "Vemurafenib + cobimetinib",
+     "BRAF V600 + MEK",
+     "Melanoma",
+     "A",
+     "2011",
+     []
+    ],
+    [
+     "Sotorasib, adagrasib",
+     "KRAS G12C (inactive state)",
+     "KRAS G12C NSCLC; colorectal with anti-EGFR",
+     "A",
+     "2021",
+     [
+      30,
+      31,
+      32
+     ]
+    ],
+    [
+     "Selumetinib",
+     "MEK1/2",
+     "NF1 plexiform neurofibroma",
+     "A",
+     "2020",
+     []
+    ],
+    [
+     "Tovorafenib",
+     "Type II pan-RAF",
+     "BRAF-altered paediatric low-grade glioma",
+     "A",
+     "2024",
+     []
+    ],
+    [
+     "RAS(ON) and KRAS G12D inhibitors",
+     "Active-state RAS",
+     "KRAS-mutant pancreatic, lung and colorectal cancer",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "cc": {
+   "name": "Cell cycle / RB axis",
+   "short": "Cell cycle",
+   "fr": {
+    "lo": 30,
+    "hi": 45
+   },
+   "refs": [
+    1,
+    11,
+    18
+   ],
+   "mech": "Mitogen-induced cyclin D–CDK4/6, then cyclin E–CDK2, phosphorylate RB and release E2F to transcribe S-phase genes. INK4 proteins (p16, p15) and CIP/KIP proteins (p21, p27) restrain the kinases. This restriction point is the decision every tumour has to take over.",
+   "lesion": "Homozygous deletion of CDKN2A at 9p21, among the most frequent focal deletions in cancer [11]; amplification of CCND1, CDK4/6 and CCNE1; loss of RB1, the original two-hit suppressor [18]. Lesions are mutually exclusive along the axis. Because CDKN2A also encodes ARF, a single 9p21 deletion disables both RB and p53 control, and it is mutually exclusive with TP53 mutation [1].",
+   "where": "Common in nearly every carcinoma, glioblastoma and melanoma; rarely altered in uveal melanoma, thymoma, testicular cancer and AML [1].",
+   "vuln": "CDK4/6 inhibitors (palbociclib, ribociclib, abemaciclib) need intact RB. RB1 loss and CCNE1 amplification cause resistance. CDK2, WEE1 and PKMYT1 inhibitors target CCNE1-amplified, replication-stressed tumours.",
+   "steps": [
+    [
+     "Mitogens make cyclin D",
+     "RAS–ERK and PI3K–mTOR signalling raise cyclin D transcription and translation. Cyclin D assembles with CDK4 or CDK6.",
+     [
+      6
+     ]
+    ],
+    [
+     "RB is phosphorylated",
+     "Cyclin D–CDK4/6 begins phosphorylating RB; cyclin E–CDK2 then hyperphosphorylates it and RB releases the E2F transcription factors.",
+     [
+      41
+     ]
+    ],
+    [
+     "E2F passes the restriction point",
+     "E2F transcribes cyclin E, cyclin A and DNA-replication genes. Cyclin E feeds back on RB, so commitment becomes irreversible and the cell no longer needs mitogens to finish the cycle.",
+     [
+      41
+     ]
+    ],
+    [
+     "Brakes hold the kinases",
+     "p16INK4a binds and inhibits CDK4/6 specifically. p21 and p27 inhibit CDK2. TGFβ induces p15 and p21, and p53 induces p21.",
+     [
+      39
+     ]
+    ],
+    [
+     "Oncogenic stress triggers senescence",
+     "Strong oncogene signalling induces p16 and ARF, arresting the cell permanently. Progression to cancer requires disabling this brake.",
+     [
+      45
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "CDKN2A is deleted, CCND1 and CDK4 are amplified, RB1 is lost or CCNE1 is amplified, mostly one per tumour. Retinoblastoma gave the first model: two hits inactivate both RB1 alleles.",
+     [
+      1,
+      11,
+      18
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1971",
+     "Retinoblastoma incidence fits a two-hit model: one hit inherited or somatic, the second somatic.",
+     [
+      18
+     ]
+    ],
+    [
+     "1993",
+     "p16 is a specific inhibitor of cyclin D–CDK4.",
+     [
+      39
+     ]
+    ],
+    [
+     "1995",
+     "RB is defined as the gatekeeper of the restriction point controlled by G1 CDKs.",
+     [
+      41
+     ]
+    ],
+    [
+     "2016",
+     "PALOMA-2: palbociclib plus letrozole extends progression-free survival from 14.5 to 24.8 months in ER+ breast cancer.",
+     [
+      40
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Palbociclib",
+     "CDK4/6",
+     "HR+/HER2− advanced breast cancer",
+     "A",
+     "2015",
+     [
+      40
+     ]
+    ],
+    [
+     "Ribociclib",
+     "CDK4/6",
+     "HR+/HER2− breast cancer, including adjuvant",
+     "A",
+     "2017",
+     []
+    ],
+    [
+     "Abemaciclib",
+     "CDK4/6",
+     "HR+/HER2− breast cancer, including high-risk adjuvant",
+     "A",
+     "2017",
+     []
+    ],
+    [
+     "Trilaciclib",
+     "CDK4/6 (transient)",
+     "Protects bone marrow during SCLC chemotherapy",
+     "A",
+     "2021",
+     []
+    ],
+    [
+     "CDK2 and PKMYT1 inhibitors",
+     "CDK2 / PKMYT1",
+     "CCNE1-amplified tumours",
+     "T",
+     "",
+     []
+    ],
+    [
+     "CDK4-selective inhibitors",
+     "CDK4",
+     "HR+ breast cancer",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "p53": {
+   "name": "p53 axis",
+   "short": "p53",
+   "fr": {
+    "lo": 35,
+    "hi": 45
+   },
+   "refs": [
+    1,
+    6,
+    13
+   ],
+   "mech": "p53 integrates DNA damage, oncogenic stress (through ARF), hypoxia and nucleotide imbalance into arrest (p21), apoptosis (PUMA, NOXA, BAX) or senescence. MDM2 ubiquitinates p53 and MDM4 masks its transactivation domain; p53 induces MDM2, closing a negative feedback loop. ATM/ATR and CHK2/CHK1 stabilise p53 after damage.",
+   "lesion": "TP53 is the most frequently mutated gene in human cancer. Missense hotspots in the DNA-binding domain (R175, R248, R273) act as dominant negatives and are usually followed by loss of the wild-type allele. Where TP53 is intact, MDM2 or MDM4 amplification, or CDKN2A/ARF deletion, disables the pathway instead. The p53 and cell-cycle pathways are co-altered more often than any other pair [1].",
+   "where": "About 96% of high-grade serous ovarian cancer and about 90% of lung squamous carcinoma; most chromosomally unstable carcinomas. Wild-type in MDM2-amplified liposarcoma.",
+   "vuln": "MDM2 antagonists for TP53-wild-type, MDM2-amplified tumours (in dedifferentiated liposarcoma 78% co-amplify MDM2 and CDK4 [1]); small-molecule reactivators of the Y220C mutant; WEE1 and ATR inhibitors exploit the lost G1 checkpoint.",
+   "steps": [
+    [
+     "p53 is kept low at rest",
+     "MDM2 ubiquitinates p53 for degradation and MDM4 blocks its transactivation domain. MDM2 was found amplified in sarcomas, where it binds p53 and silences it.",
+     [
+      42,
+      43
+     ]
+    ],
+    [
+     "Stress stabilises p53",
+     "DNA breaks activate ATM and CHK2; replication stress activates ATR and CHK1. Phosphorylation of the p53 N-terminus blocks MDM2 binding. Oncogene signalling induces ARF through E2F, and ARF sequesters MDM2.",
+     [
+      45
+     ]
+    ],
+    [
+     "A tetramer binds DNA",
+     "p53 binds its response elements as a tetramer. Missense mutants in the DNA-binding domain cannot bind DNA and poison wild-type subunits in mixed tetramers (dominant-negative effect).",
+     [
+      45
+     ]
+    ],
+    [
+     "The cell chooses an outcome",
+     "p53 targets include p21 (arrest), PUMA, NOXA and BAX (apoptosis), senescence genes, and metabolic and ferroptosis regulators. Which outcome occurs depends on tissue and stress.",
+     [
+      45
+     ]
+    ],
+    [
+     "Negative feedback",
+     "p53 induces MDM2, which degrades p53, so p53 levels pulse after damage rather than rising steadily.",
+     [
+      43
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "TP53 mutation with loss of the second allele, or, in TP53-wild-type tumours, MDM2/MDM4 amplification or CDKN2A deletion. These routes are mutually exclusive.",
+     [
+      1,
+      13
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1992",
+     "MDM2 is amplified in human sarcomas and binds p53.",
+     [
+      42
+     ]
+    ],
+    [
+     "1992",
+     "The MDM2 protein forms a complex with p53 and inhibits p53-driven transcription.",
+     [
+      43
+     ]
+    ],
+    [
+     "2004",
+     "Nutlins, small molecules that fill the p53-binding pocket of MDM2, activate p53 in tumours in vivo.",
+     [
+      44
+     ]
+    ],
+    [
+     "2017",
+     "p53 output depends on cell type and stress; tumour suppression may rest on less-studied programmes beyond arrest and apoptosis.",
+     [
+      45
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "No approved TP53-directed drug",
+     "—",
+     "—",
+     "X",
+     "",
+     []
+    ],
+    [
+     "MDM2 antagonists (brigimadlin, milademetan)",
+     "MDM2–p53 interface",
+     "TP53-wild-type, MDM2-amplified tumours such as dedifferentiated liposarcoma",
+     "T",
+     "",
+     [
+      44
+     ]
+    ],
+    [
+     "Rezatapopt",
+     "p53 Y220C stabiliser",
+     "TP53 Y220C solid tumours",
+     "T",
+     "",
+     []
+    ],
+    [
+     "Eprenetapopt (APR-246)",
+     "Mutant p53 refolding",
+     "TP53-mutant MDS (phase 3 missed its primary endpoint)",
+     "X",
+     "",
+     []
+    ],
+    [
+     "WEE1 and ATR inhibitors",
+     "G2 checkpoint",
+     "TP53-mutant tumours that rely on the G2 checkpoint",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "pi3k": {
+   "name": "PI3K / AKT / mTOR",
+   "short": "PI3K–mTOR",
+   "fr": {
+    "lo": 30,
+    "hi": 40
+   },
+   "refs": [
+    1,
+    2,
+    9
+   ],
+   "mech": "Class IA PI3K (p110α with p85) phosphorylates PIP2 to PIP3 and recruits AKT and PDK1. AKT inhibits TSC1/2, activating mTORC1 and anabolic translation, and inactivates FOXO and GSK3. PTEN removes PIP3 and is the main brake. LKB1–AMPK holds mTORC1 back under energy stress.",
+   "lesion": "PIK3CA helical (E542K, E545K) and kinase-domain (H1047R) hotspots; PIK3R1 in-frame deletions that release p110; PTEN deletion, mutation or silencing; AKT1 E17K; TSC1/2 and MTOR mutations; STK11 loss. RTK activation is mutually exclusive with PI3K lesions, while PI3K and NRF2 lesions co-occur more strongly than any other pathway pair [1].",
+   "where": "Non-hypermutated endometrial cancer (86–95%), EBV-positive gastric (80%), lung squamous (68%) [1]; also breast, head and neck, cervical, glioblastoma, prostate.",
+   "vuln": "Alpelisib and inavolisib (PIK3CA), capivasertib (AKT), everolimus (mTORC1). Insulin feedback and the p110β dependence of PTEN-null cells complicate targeting.",
+   "steps": [
+    [
+     "PI3K is recruited",
+     "Phosphotyrosines on activated receptors or adaptors (and RAS-GTP) bind the SH2 domains of p85. This relieves p85's inhibition of the catalytic subunit p110α and brings it to the membrane.",
+     [
+      6
+     ]
+    ],
+    [
+     "PIP3 is made",
+     "p110α phosphorylates PIP2 at the 3′ position of the inositol ring to make PIP3. PTEN is the lipid phosphatase that reverses the reaction and so sets the level of signalling.",
+     [
+      38
+     ]
+    ],
+    [
+     "AKT is activated",
+     "PIP3 recruits AKT and PDK1 through their PH domains. PDK1 phosphorylates AKT at T308 and mTORC2 at S473, switching it fully on.",
+     [
+      6
+     ]
+    ],
+    [
+     "AKT phosphorylates its targets",
+     "AKT inhibits TSC2 (activating RHEB and mTORC1), excludes FOXO transcription factors from the nucleus, inactivates GSK3, inhibits the pro-apoptotic BAD and activates MDM2. The cell grows, survives and stops repairing its brakes.",
+     [
+      6
+     ]
+    ],
+    [
+     "mTORC1 drives anabolism",
+     "mTORC1 phosphorylates S6K and 4E-BP1, switching on cap-dependent translation and lipid and nucleotide synthesis. LKB1–AMPK (energy) and amino-acid sensing gate this step.",
+     [
+      6
+     ]
+    ],
+    [
+     "Feedback limits the pathway",
+     "S6K phosphorylates IRS1 and shuts down upstream signalling. Drugs release this brake. PI3Kα inhibition also raises blood glucose and insulin, which re-activates the pathway in the tumour.",
+     [
+      36
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "PIK3CA mutations cluster in the helical and kinase domains across many cancers. PTEN is deleted, mutated or silenced, and PI3K lesions are mutually exclusive with RTK activation within a tumour.",
+     [
+      35,
+      38,
+      1
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1997",
+     "PTEN is identified at 10q23 and found mutated in brain, breast and prostate cancer.",
+     [
+      38
+     ]
+    ],
+    [
+     "2004",
+     "PIK3CA is mutated at high frequency across human cancers, mostly in the helical and kinase domains.",
+     [
+      35
+     ]
+    ],
+    [
+     "2019",
+     "SOLAR-1: alpelisib plus fulvestrant roughly doubles progression-free survival (11.0 vs 5.7 months) in PIK3CA-mutant HR+ breast cancer.",
+     [
+      36
+     ]
+    ],
+    [
+     "2023",
+     "CAPItello-291: capivasertib plus fulvestrant improves progression-free survival (7.2 vs 3.6 months) in HR+ breast cancer.",
+     [
+      37
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Alpelisib",
+     "PI3Kα",
+     "PIK3CA-mutant HR+/HER2− breast cancer",
+     "A",
+     "2019",
+     [
+      36
+     ]
+    ],
+    [
+     "Inavolisib",
+     "PI3Kα (mutant-selective, degrader)",
+     "PIK3CA-mutant HR+ breast cancer, with palbociclib and fulvestrant",
+     "A",
+     "2024",
+     []
+    ],
+    [
+     "Capivasertib",
+     "AKT1–3",
+     "PIK3CA/AKT1/PTEN-altered HR+ breast cancer",
+     "A",
+     "2023",
+     [
+      37
+     ]
+    ],
+    [
+     "Everolimus",
+     "mTORC1",
+     "HR+ breast, renal cell, neuroendocrine tumours, TSC",
+     "A",
+     "2009",
+     []
+    ],
+    [
+     "Temsirolimus",
+     "mTORC1",
+     "Poor-risk renal cell carcinoma",
+     "A",
+     "2007",
+     []
+    ],
+    [
+     "Nab-sirolimus",
+     "mTORC1",
+     "Malignant PEComa",
+     "A",
+     "2021",
+     []
+    ],
+    [
+     "Idelalisib, duvelisib",
+     "PI3Kδ",
+     "B-cell malignancies (B-cell receptor signalling)",
+     "A",
+     "2014",
+     []
+    ]
+   ]
+  },
+  "myc": {
+   "name": "MYC network",
+   "short": "MYC",
+   "fr": {
+    "lo": 15,
+    "hi": 30
+   },
+   "refs": [
+    1,
+    11
+   ],
+   "mech": "MYC–MAX heterodimers bind E-boxes and amplify transcription of genes for ribosome biogenesis, nucleotide and glutamine metabolism and cell-cycle entry. MXD, MNT and MGA, also partnered with MAX, oppose it. MYC is short-lived: ERK phosphorylates S62, GSK3 phosphorylates T58, and the resulting degron is read by FBXW7.",
+   "lesion": "Focal and arm-level 8q24 gain, among the most common amplifications in cancer [11]; immunoglobulin translocations in Burkitt lymphoma; MYCN amplification in neuroblastoma and MYCL in small-cell lung cancer; loss of the MGA/MAX antagonists; FBXW7 loss, which stabilises MYC.",
+   "where": "Most common in tumours with chromosome 8 gain: breast, ovarian, squamous carcinomas, prostate [1].",
+   "vuln": "No approved direct inhibitor. Indirect routes include BET, CDK7 and CDK9 inhibitors, synthetic-lethal partners, and the OMO-103 mini-protein in early trials.",
+   "steps": [
+    [
+     "Many pathways converge on MYC",
+     "ERK, WNT–TCF and NOTCH–RBPJ all drive MYC transcription. MYC mRNA and protein are very short-lived, so MYC levels track signalling closely.",
+     [
+      46
+     ]
+    ],
+    [
+     "MYC pairs with MAX",
+     "MYC is a basic helix-loop-helix leucine-zipper protein. It must dimerise with MAX to bind E-box DNA (CACGTG).",
+     [
+      46
+     ]
+    ],
+    [
+     "MYC amplifies transcription",
+     "At high levels MYC invades enhancers and amplifies already-active genes, especially those for ribosome biogenesis, nucleotide synthesis and glutamine metabolism.",
+     [
+      46
+     ]
+    ],
+    [
+     "Antagonists compete for MAX",
+     "MXD, MNT and MGA also dimerise with MAX and repress the same sites, so losing them raises MYC output.",
+     [
+      46
+     ]
+    ],
+    [
+     "MYC is degraded",
+     "ERK phosphorylates S62, then GSK3 phosphorylates T58, creating a degron recognised by FBXW7. T58 mutations in Burkitt lymphoma and FBXW7 loss both stabilise MYC.",
+     [
+      46
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "8q24 gain and focal amplification, immunoglobulin translocations, MYCN and MYCL amplification. MYC needs anti-apoptotic partners to transform: BCL2 cooperates with MYC to immortalise pre-B cells.",
+     [
+      11,
+      71
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1988",
+     "BCL2 promotes survival rather than proliferation and cooperates with MYC in transformation.",
+     [
+      71
+     ]
+    ],
+    [
+     "2012",
+     "Review of MYC as a global amplifier of growth programmes and a metabolic regulator.",
+     [
+      46
+     ]
+    ],
+    [
+     "2013",
+     "MYC is among the most frequent focal amplifications across cancer types.",
+     [
+      11
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "No approved direct MYC inhibitor",
+     "—",
+     "—",
+     "X",
+     "",
+     []
+    ],
+    [
+     "OMO-103",
+     "MYC dimerisation (mini-protein)",
+     "Advanced solid tumours, phase 1",
+     "T",
+     "",
+     []
+    ],
+    [
+     "BET bromodomain inhibitors",
+     "BRD4 (MYC transcription)",
+     "MYC-driven haematological and solid tumours",
+     "T",
+     "",
+     []
+    ],
+    [
+     "CDK9 inhibitors",
+     "Transcriptional elongation",
+     "MYC- and MCL1-dependent tumours",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "wnt": {
+   "name": "WNT / β-catenin",
+   "short": "WNT",
+   "fr": {
+    "lo": 10,
+    "hi": 20
+   },
+   "refs": [
+    1,
+    6,
+    14
+   ],
+   "mech": "Without ligand, the destruction complex (AXIN, APC, CK1, GSK3) phosphorylates β-catenin for βTrCP-mediated degradation. WNT bound to FZD and LRP6 sequesters AXIN, so β-catenin accumulates and drives TCF/LEF targets (MYC, CCND1, AXIN2, LGR5). RNF43 and ZNRF3 clear FZD from the cell surface and are opposed by R-spondin and LGR5.",
+   "lesion": "Truncating APC mutations, the initiating gatekeeper in about 80% of colorectal cancer [6]; CTNNB1 exon-3 degron mutations (liver, endometrium); AXIN1 loss (liver); RNF43 loss (MSI colorectal, gastric); RSPO2/3 fusions.",
+   "where": "The most variable pathway across cancer types [1]: dominant in colorectal, hepatocellular and endometrioid cancers, nearly absent elsewhere.",
+   "vuln": "Porcupine inhibitors work only for ligand-dependent RNF43- or RSPO-driven tumours; APC and CTNNB1 mutants signal without ligand. β-catenin activation correlates with T-cell exclusion [14].",
+   "steps": [
+    [
+     "The off state degrades β-catenin",
+     "The destruction complex (AXIN, APC, CK1α, GSK3) phosphorylates β-catenin at S45, then S33, S37 and T41. βTrCP ubiquitinates it for degradation.",
+     [
+      50
+     ]
+    ],
+    [
+     "WNT turns the pathway on",
+     "WNT binds Frizzled and LRP5/6. Dishevelled polymerises, phosphorylated LRP6 sequesters AXIN and inhibits GSK3, and β-catenin stops being degraded.",
+     [
+      50
+     ]
+    ],
+    [
+     "β-catenin enters the nucleus",
+     "β-catenin binds TCF/LEF, displaces Groucho co-repressors and transcribes MYC, CCND1, AXIN2 and LGR5.",
+     [
+      48,
+      49
+     ]
+    ],
+    [
+     "Surface receptors are tuned",
+     "RNF43 and ZNRF3 ubiquitinate Frizzled and remove it. R-spondin with LGR4/5 clears RNF43/ZNRF3, amplifying WNT signals in stem cells.",
+     [
+      50
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "APC loss constitutively activates β-catenin–TCF in colon cancer. Tumours with wild-type APC carry CTNNB1 mutations that remove the phosphodegron.",
+     [
+      48,
+      49
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1982",
+     "MMTV proviruses integrate repeatedly at one locus (int-1, later Wnt1) in mouse mammary tumours.",
+     [
+      47
+     ]
+    ],
+    [
+     "1997",
+     "APC−/− colon cancer cells show constitutive β-catenin–TCF transcription.",
+     [
+      48
+     ]
+    ],
+    [
+     "1997",
+     "Colon cancers and melanomas with wild-type APC carry activating β-catenin mutations.",
+     [
+      49
+     ]
+    ],
+    [
+     "2017",
+     "Review of WNT signalling and therapeutic modalities.",
+     [
+      50
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "No approved WNT-pathway drug for cancer",
+     "—",
+     "—",
+     "X",
+     "",
+     []
+    ],
+    [
+     "Porcupine inhibitors (e.g. WNT974)",
+     "PORCN (WNT secretion)",
+     "RNF43-mutant or RSPO-fusion tumours",
+     "T",
+     "",
+     [
+      50
+     ]
+    ],
+    [
+     "Frizzled antibodies",
+     "FZD receptors",
+     "Solid tumours (bone toxicity limited development)",
+     "X",
+     "",
+     []
+    ],
+    [
+     "Tankyrase inhibitors, β-catenin degraders",
+     "AXIN stabilisation / β-catenin",
+     "APC- and CTNNB1-mutant tumours",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "notch": {
+   "name": "NOTCH",
+   "short": "NOTCH",
+   "fr": {
+    "lo": 10,
+    "hi": 20
+   },
+   "refs": [
+    1
+   ],
+   "mech": "DLL or JAG ligand binding triggers ADAM10 and γ-secretase cleavage. The NOTCH intracellular domain (NICD) enters the nucleus, binds RBPJ and MAML, and drives HES/HEY and, in T cells, MYC. FBXW7 ends the signal by degrading NICD.",
+   "lesion": "The sign depends on tissue. Oncogenic: activating NOTCH1 HD and PEST mutations in T-ALL and CLL. Suppressive: truncating NOTCH1–3 mutations in squamous carcinomas of head and neck, lung, skin and oesophagus, where Notch drives squamous differentiation. FBXW7 loss stabilises NICD, MYC, cyclin E and MCL1 at once.",
+   "where": "Head and neck and other squamous cancers, T-ALL, oligodendroglioma.",
+   "vuln": "γ-secretase inhibitors (nirogacestat, approved for desmoid tumours) carry gut toxicity, and inhibition is contraindicated where Notch acts as a suppressor.",
+   "steps": [
+    [
+     "Ligand meets receptor",
+     "DLL or JAG on a neighbouring cell binds NOTCH. Endocytosis of the ligand pulls on the receptor and exposes its S2 cleavage site.",
+     [
+      1
+     ]
+    ],
+    [
+     "Two cuts release NICD",
+     "ADAM10 cuts at S2, then γ-secretase cuts within the membrane (S3), releasing the NOTCH intracellular domain (NICD).",
+     [
+      51
+     ]
+    ],
+    [
+     "A nuclear complex forms",
+     "NICD binds RBPJ and recruits MAML, turning RBPJ from a repressor into an activator. Targets include HES1, HEY genes and, in T cells, MYC.",
+     [
+      51
+     ]
+    ],
+    [
+     "The signal is terminated",
+     "The PEST domain of NICD is phosphorylated and recognised by FBXW7, which targets it for degradation.",
+     [
+      51
+     ]
+    ],
+    [
+     "Oncogenic in T cells",
+     "More than half of T-ALLs carry activating NOTCH1 mutations in the heterodimerisation (HD) domain, which allows cleavage without ligand, or in the PEST domain, which blocks degradation.",
+     [
+      51
+     ]
+    ],
+    [
+     "Suppressive in squamous epithelia",
+     "Inactivating NOTCH1 mutations occur in head and neck squamous carcinoma, where Notch drives differentiation.",
+     [
+      52
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "2004",
+     "Activating NOTCH1 mutations are found in more than 50% of human T-ALL.",
+     [
+      51
+     ]
+    ],
+    [
+     "2011",
+     "Exome sequencing finds inactivating NOTCH1 mutations in head and neck squamous carcinoma.",
+     [
+      52
+     ]
+    ],
+    [
+     "2023",
+     "DeFi trial: the γ-secretase inhibitor nirogacestat cuts progression risk by 71% in desmoid tumours.",
+     [
+      53
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Nirogacestat",
+     "γ-secretase",
+     "Progressing desmoid tumours",
+     "A",
+     "2023",
+     [
+      53
+     ]
+    ],
+    [
+     "Tarlatamab",
+     "DLL3 × CD3 bispecific (DLL3 as surface antigen, not pathway blockade)",
+     "Extensive-stage SCLC",
+     "A",
+     "2024",
+     []
+    ],
+    [
+     "γ-secretase inhibitors and NOTCH antibodies",
+     "NOTCH cleavage / receptor",
+     "NOTCH-activated T-ALL, adenoid cystic carcinoma",
+     "T",
+     "",
+     [
+      51
+     ]
+    ]
+   ]
+  },
+  "hippo": {
+   "name": "Hippo / YAP–TAZ",
+   "short": "Hippo",
+   "fr": {
+    "lo": 8,
+    "hi": 15
+   },
+   "refs": [
+    1
+   ],
+   "mech": "Cell density, polarity and mechanical cues activate MST1/2–SAV1 and MAP4K kinases, which phosphorylate LATS1/2. LATS phosphorylates YAP and TAZ, holding them in the cytoplasm. Unphosphorylated YAP/TAZ bind TEAD and drive proliferation and survival genes (CTGF, CYR61, AXL).",
+   "lesion": "NF2 loss (mesothelioma, schwannoma), LATS1/2 and SAV1 loss, FAT1 truncation (head and neck, lung squamous), YAP1 and WWTR1 (TAZ) fusions, YAP1 amplification. Hippo lesions often co-occur in the same tumour, which suggests they cooperate to activate YAP [1].",
+   "where": "Mesothelioma, head and neck, lung squamous, uveal melanoma (through GNAQ/11), renal.",
+   "vuln": "TEAD palmitoylation inhibitors are in early trials. YAP/TAZ also mediate resistance to RAS–MAPK inhibitors.",
+   "steps": [
+    [
+     "Cells sense their surroundings",
+     "Cell–cell contact, polarity complexes, NF2/Merlin, FAT cadherins and mechanical tension on actin all feed into the Hippo kinases.",
+     [
+      54
+     ]
+    ],
+    [
+     "A kinase cascade fires",
+     "MST1/2 (with SAV1) and MAP4K kinases phosphorylate LATS1/2, which work together with MOB1.",
+     [
+      54
+     ]
+    ],
+    [
+     "YAP and TAZ are inactivated",
+     "LATS phosphorylates YAP at S127, creating a 14-3-3 binding site that holds YAP in the cytoplasm. Contact inhibition of growth depends on this step.",
+     [
+      54
+     ]
+    ],
+    [
+     "Nuclear YAP/TAZ drive growth",
+     "When Hippo is off, YAP/TAZ enter the nucleus, bind TEAD and drive CTGF, CYR61 and AXL, often together with AP-1 at enhancers.",
+     [
+      54
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "NF2 and LATS loss, FAT1 truncation, YAP1 and TAZ fusions, and GNAQ/GNA11 mutations in uveal melanoma that activate YAP through RHO. Hippo lesions tend to co-occur within a tumour.",
+     [
+      1
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "2007",
+     "The Hippo pathway inactivates YAP, and this mediates contact inhibition and organ-size control.",
+     [
+      54
+     ]
+    ],
+    [
+     "2018",
+     "Hippo pathway lesions often co-occur within a tumour, suggesting they cooperate.",
+     [
+      1
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "No approved Hippo-pathway drug",
+     "—",
+     "—",
+     "X",
+     "",
+     []
+    ],
+    [
+     "TEAD palmitoylation inhibitors",
+     "TEAD1–4",
+     "NF2-mutant mesothelioma and other YAP-driven tumours",
+     "T",
+     "",
+     []
+    ],
+    [
+     "Combinations with RAS–MAPK inhibitors",
+     "YAP/TAZ-mediated resistance",
+     "KRAS- and EGFR-driven tumours",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "tgfb": {
+   "name": "TGFβ / SMAD",
+   "short": "TGFβ",
+   "fr": {
+    "lo": 8,
+    "hi": 15
+   },
+   "refs": [
+    1,
+    14
+   ],
+   "mech": "TGFβ binds TGFBR2, which phosphorylates TGFBR1. SMAD2/3 are phosphorylated, partner with SMAD4, induce p15 and p21 and repress MYC, a cytostatic programme in epithelia. In advanced tumours the same ligand promotes EMT, invasion, fibrosis and immune exclusion.",
+   "lesion": "SMAD4 deletion or mutation (pancreas, colorectal); TGFBR2 and ACVR2A frameshifts at poly-A tracts in MSI tumours; SMAD2/3 mutations. Late tumours keep the ligand while losing the cytostatic response.",
+   "where": "Highest in pancreatic and gastrointestinal cancers; renal and brain cancers have almost none [1].",
+   "vuln": "TGFβ traps and ALK5 inhibitors have given mixed results. Stromal TGFβ defines the TGF-β-dominant immune subtype and excludes T cells [14].",
+   "steps": [
+    [
+     "The ligand is released",
+     "TGFβ is secreted in a latent complex. Integrins and proteases release the active ligand.",
+     [
+      57
+     ]
+    ],
+    [
+     "Receptors phosphorylate each other",
+     "TGFβ binds TGFBR2, which phosphorylates the GS domain of TGFBR1 (ALK5).",
+     [
+      57
+     ]
+    ],
+    [
+     "SMADs carry the signal",
+     "ALK5 phosphorylates the C-terminus of SMAD2/3. They bind SMAD4 and the complex enters the nucleus.",
+     [
+      57
+     ]
+    ],
+    [
+     "Epithelial cells stop dividing",
+     "SMAD complexes induce CDKN2B (p15) and CDKN1A (p21) and repress MYC and ID genes.",
+     [
+      57
+     ]
+    ],
+    [
+     "The response switches",
+     "Advanced tumours lose the cytostatic arm but keep the ligand, which now drives EMT, invasion, fibrosis and immune suppression.",
+     [
+      57,
+      14
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "TGFBR2 is inactivated by frameshifts at a poly-A tract in MSI colon cancer, and SMAD4 (DPC4) is deleted at 18q21 in pancreatic cancer.",
+     [
+      56,
+      55
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1995",
+     "TGFBR2 is inactivated in colon cancers with microsatellite instability.",
+     [
+      56
+     ]
+    ],
+    [
+     "1996",
+     "DPC4 (SMAD4) is identified as a tumour suppressor at 18q21.1, homozygously deleted in pancreatic cancer.",
+     [
+      55
+     ]
+    ],
+    [
+     "2008",
+     "TGFβ switches from suppressor to promoter during tumour progression.",
+     [
+      57
+     ]
+    ],
+    [
+     "2018",
+     "A TGF-β-dominant immune subtype has poor prognosis across tumour types.",
+     [
+      14
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "No approved TGFβ-pathway cancer drug",
+     "—",
+     "—",
+     "X",
+     "",
+     []
+    ],
+    [
+     "Luspatercept",
+     "Activin/GDF ligand trap (TGFβ superfamily)",
+     "Anaemia in lower-risk MDS (supportive, not antitumour)",
+     "A",
+     "2020",
+     []
+    ],
+    [
+     "Galunisertib, bintrafusp alfa",
+     "ALK5 kinase; PD-L1/TGFβ trap",
+     "Solid tumours (late trials disappointing)",
+     "X",
+     "",
+     []
+    ]
+   ]
+  },
+  "nrf2": {
+   "name": "KEAP1 / NRF2 oxidative stress",
+   "short": "NRF2",
+   "fr": {
+    "v": 4,
+    "ver": true,
+    "lab": "4% overall"
+   },
+   "refs": [
+    1
+   ],
+   "mech": "KEAP1 is the substrate adaptor of a CUL3 ubiquitin ligase that degrades NRF2 at rest. Oxidants and electrophiles modify KEAP1 cysteines; NRF2 then accumulates and induces antioxidant, NADPH-generating and drug-efflux genes.",
+   "lesion": "KEAP1 loss-of-function and NFE2L2 gain-of-function mutations in the DLG/ETGE KEAP1-binding motifs, nearly mutually exclusive; CUL3 loss; NFE2L2 amplification. NRF2 lesions co-occur with PI3K activation [1], and in lung adenocarcinoma KEAP1 loss co-occurs with STK11 loss.",
+   "where": "The lowest overall frequency (4%), but 25% of lung squamous and 23% of oesophageal squamous carcinoma [1].",
+   "vuln": "No approved direct drug; glutaminase and other metabolic dependencies are under test. KEAP1/STK11 co-mutation predicts poor response to immunotherapy.",
+   "steps": [
+    [
+     "NRF2 is degraded at rest",
+     "A KEAP1 dimer grips the Neh2 domain of NRF2 at its DLG and ETGE motifs, and CUL3 ubiquitinates it.",
+     [
+      58
+     ]
+    ],
+    [
+     "KEAP1 senses stress",
+     "Electrophiles and oxidants modify KEAP1 cysteines (C151, C273, C288). KEAP1 can no longer present NRF2 for ubiquitination, so newly made NRF2 accumulates.",
+     [
+      58
+     ]
+    ],
+    [
+     "NRF2 switches on defences",
+     "NRF2 with small MAF proteins binds antioxidant response elements and induces NQO1, HMOX1, glutathione-synthesis genes, thioredoxin reductase, G6PD and drug-efflux pumps.",
+     [
+      58
+     ]
+    ],
+    [
+     "Metabolism is rewired",
+     "Higher NADPH and glutathione protect against oxidative stress and chemotherapy, but make cells dependent on glutamine and cystine.",
+     [
+      59
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "KEAP1 mutations disrupt the KEAP1–NRF2 interaction in lung cancer, and NFE2L2 motif mutations do the same in squamous cancers.",
+     [
+      59,
+      1
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1999",
+     "KEAP1 represses NRF2 by binding its N-terminal Neh2 domain.",
+     [
+      58
+     ]
+    ],
+    [
+     "2006",
+     "KEAP1 mutations disrupt KEAP1–NRF2 binding in non-small-cell lung cancer.",
+     [
+      59
+     ]
+    ],
+    [
+     "2018",
+     "NRF2 and PI3K pathway lesions co-occur more strongly than any other pathway pair.",
+     [
+      1
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "No approved NRF2-directed drug",
+     "—",
+     "—",
+     "X",
+     "",
+     []
+    ],
+    [
+     "Glutaminase inhibitors (telaglenastat)",
+     "GLS1",
+     "KEAP1/NFE2L2-mutant NSCLC (phase 2 stopped)",
+     "X",
+     "",
+     []
+    ],
+    [
+     "TORC1/2 inhibitors",
+     "mTOR",
+     "NRF2-pathway-mutant squamous lung cancer",
+     "T",
+     "",
+     [
+      1
+     ]
+    ]
+   ]
+  },
+  "ddr": {
+   "name": "DNA damage response & repair",
+   "short": "DNA repair",
+   "fr": {
+    "note": "MMR, HR and POLE defects; frequency varies by tissue"
+   },
+   "refs": [
+    2,
+    8,
+    13,
+    23
+   ],
+   "mech": "These are the caretaker networks: homologous recombination (BRCA1–PALB2–BRCA2–RAD51) for double-strand breaks and stalled forks; mismatch repair (MLH1, MSH2, MSH6, PMS2); polymerase-ε proofreading (POLE); and ATM/ATR checkpoint signalling. Each defect raises the mutation rate and leaves its own mutational signature [8].",
+   "lesion": "Biallelic BRCA1/2 loss, germline or somatic, gives homologous-recombination deficiency (signature SBS3 and microhomology deletions). MLH1 promoter hypermethylation causes MSI; POLE exonuclease hotspots cause ultramutation above 100 mutations/Mb. Mutations with loss of heterozygosity affect over a third of DDR genes [13].",
+   "where": "HR loss in ovarian (most common), breast, prostate and pancreatic cancer; MMR and POLE loss in colorectal, endometrial and gastric cancer.",
+   "vuln": "PARP inhibitors exploit synthetic lethality with HR loss [23]. Immune checkpoint blockade has a tissue-agnostic approval for MSI-H/dMMR tumours; more than 300 MSI tumours in TCGA show high PD-1/PD-L1 [2]. ATR, WEE1 and POLQ inhibitors are in trials.",
+   "steps": [
+    [
+     "Damage is detected",
+     "The MRN complex senses double-strand breaks and activates ATM. RPA-coated single-stranded DNA at stalled forks activates ATR.",
+     [
+      13
+     ]
+    ],
+    [
+     "Checkpoints halt the cycle",
+     "CHK2 and CHK1 inhibit CDC25 phosphatases and stabilise p53, giving time for repair.",
+     [
+      13
+     ]
+    ],
+    [
+     "The cell chooses a repair route",
+     "53BP1 favours error-prone end joining. BRCA1 promotes end resection; PALB2 bridges BRCA1 to BRCA2, which loads RAD51 for homology search and accurate repair.",
+     [
+      13
+     ]
+    ],
+    [
+     "Mismatches are corrected",
+     "MutSα (MSH2–MSH6) recognises replication errors and MutLα (MLH1–PMS2) nicks the new strand. Loss causes microsatellite instability and a high neoantigen load.",
+     [
+      61,
+      62
+     ]
+    ],
+    [
+     "Polymerase proofreading",
+     "The exonuclease domain of polymerase ε removes misincorporated bases. POLE hotspot mutations remove proofreading and cause ultramutation.",
+     [
+      8
+     ]
+    ],
+    [
+     "Synthetic lethality",
+     "PARP inhibitors trap PARP1 on DNA. HR-deficient cells cannot repair the resulting replication-associated breaks and die, while normal cells survive.",
+     [
+      23,
+      60
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "2005",
+     "BRCA1/2-deficient cells are about a thousand-fold more sensitive to PARP inhibition than normal cells.",
+     [
+      23,
+      60
+     ]
+    ],
+    [
+     "2015",
+     "PD-1 blockade produces responses in mismatch-repair-deficient colorectal cancer.",
+     [
+      61
+     ]
+    ],
+    [
+     "2017",
+     "MMR deficiency predicts response to PD-1 blockade across 12 tumour types.",
+     [
+      62
+     ]
+    ],
+    [
+     "2017",
+     "OlympiAD: olaparib improves progression-free survival in germline BRCA-mutant metastatic breast cancer.",
+     [
+      63
+     ]
+    ],
+    [
+     "2018",
+     "SOLO-1: maintenance olaparib lowers the risk of progression or death by 70% in newly diagnosed BRCA-mutant ovarian cancer.",
+     [
+      64
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Olaparib",
+     "PARP1/2",
+     "BRCA-mutant ovarian, breast, pancreatic; HRR-mutant prostate",
+     "A",
+     "2014",
+     [
+      63,
+      64
+     ]
+    ],
+    [
+     "Niraparib",
+     "PARP1/2",
+     "Ovarian cancer maintenance",
+     "A",
+     "2017",
+     []
+    ],
+    [
+     "Rucaparib",
+     "PARP1/2",
+     "BRCA-mutant ovarian and prostate cancer",
+     "A",
+     "2016",
+     []
+    ],
+    [
+     "Talazoparib",
+     "PARP1/2",
+     "Germline BRCA breast; HRR-mutant prostate with enzalutamide",
+     "A",
+     "2018",
+     []
+    ],
+    [
+     "Pembrolizumab",
+     "PD-1",
+     "MSI-H/dMMR solid tumours (tissue-agnostic)",
+     "A",
+     "2017",
+     [
+      61,
+      62
+     ]
+    ],
+    [
+     "Dostarlimab",
+     "PD-1",
+     "dMMR endometrial cancer",
+     "A",
+     "2021",
+     []
+    ],
+    [
+     "Platinum chemotherapy",
+     "DNA crosslinks",
+     "HR-deficient ovarian, breast, pancreatic cancer",
+     "A",
+     "",
+     []
+    ],
+    [
+     "ATR, WEE1 and POLQ inhibitors",
+     "Replication-stress response",
+     "ATM-deficient, HR-deficient and CCNE1-amplified tumours",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "chrom": {
+   "name": "Chromatin & epigenetic regulators",
+   "short": "Chromatin",
+   "fr": {
+    "v": 19.6,
+    "ver": true,
+    "lab": "19.6% SWI/SNF alone",
+    "src": 16
+   },
+   "refs": [
+    2,
+    5,
+    16,
+    22
+   ],
+   "mech": "SWI/SNF (BAF/PBAF) remodellers open enhancers and oppose Polycomb (PRC2/EZH2) silencing. KMT2C/D with KDM6A mark enhancers; CREBBP/EP300 acetylate histones and p53; SETD2 writes H3K36me3; DNMT3A and TET2 balance DNA methylation; BAP1 removes H2AK119 ubiquitin.",
+   "lesion": "Mostly truncating losses spread over many genes. mSWI/SNF subunits are mutated in 19.6% of human tumours [16]: ARID1A (ovarian clear-cell, endometrial, gastric), PBRM1 (renal), SMARCA4 (lung, SCCOHT), SMARCB1 (rhabdoid). EZH2 Y641 gain of function in lymphoma; DNMT3A and TET2 in clonal haematopoiesis and AML. Hanahan now lists non-mutational epigenetic reprogramming as an enabling characteristic [5].",
+   "where": "Present in almost every tumour type. Clear-cell renal (PBRM1, SETD2, BAP1 on 3p), bladder (KDM6A, KMT2D), lymphoma (CREBBP, KMT2D, EZH2).",
+   "vuln": "Tazemetostat (EZH2) for SMARCB1-deficient sarcoma and follicular lymphoma; paralog synthetic lethality (ARID1A–ARID1B, SMARCA4–SMARCA2) with SMARCA2 degraders in trials; hypomethylating agents in myeloid disease.",
+   "steps": [
+    [
+     "Nucleosomes are moved",
+     "SWI/SNF (BAF and PBAF) uses ATP, through SMARCA4 or SMARCA2, to slide or evict nucleosomes at enhancers and promoters. ARID1A and PBRM1 target the complexes to DNA.",
+     [
+      16
+     ]
+    ],
+    [
+     "SWI/SNF opposes Polycomb",
+     "SWI/SNF evicts PRC2. When SWI/SNF is lost, EZH2-catalysed H3K27me3 spreads, so SMARCB1- and ARID1A-deficient cells become dependent on EZH2.",
+     [
+      65,
+      68
+     ]
+    ],
+    [
+     "Enhancers are written",
+     "KMT2C/D place H3K4me1, KDM6A removes the repressive H3K27me3 mark, and CREBBP/EP300 add H3K27ac to activate enhancers.",
+     [
+      5
+     ]
+    ],
+    [
+     "DNA methylation is balanced",
+     "DNMT3A writes new DNA methylation and TET2 oxidises it for removal. 2-hydroxyglutarate made by mutant IDH inhibits TET enzymes.",
+     [
+      22
+     ]
+    ],
+    [
+     "How cancer breaks it",
+     "Truncating SMARCB1 mutations cause rhabdoid tumours, ARID1A mutations ovarian clear-cell carcinoma, PBRM1 mutations renal carcinoma. Overall about a fifth of tumours mutate SWI/SNF.",
+     [
+      65,
+      66,
+      67,
+      16
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1998",
+     "Truncating hSNF5/INI1 (SMARCB1) mutations cause aggressive paediatric rhabdoid tumours.",
+     [
+      65
+     ]
+    ],
+    [
+     "2010",
+     "ARID1A is mutated in endometriosis-associated ovarian carcinomas.",
+     [
+      66
+     ]
+    ],
+    [
+     "2011",
+     "PBRM1 is frequently mutated in clear-cell renal carcinoma.",
+     [
+      67
+     ]
+    ],
+    [
+     "2013",
+     "mSWI/SNF subunits are mutated in 19.6% of human tumours.",
+     [
+      16
+     ]
+    ],
+    [
+     "2015",
+     "ARID1A-mutant cancers depend on EZH2 methyltransferase activity (synthetic lethality).",
+     [
+      68
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Tazemetostat",
+     "EZH2",
+     "INI1-deficient epithelioid sarcoma; relapsed follicular lymphoma",
+     "A",
+     "2020",
+     [
+      68
+     ]
+    ],
+    [
+     "Azacitidine, decitabine",
+     "DNMT (hypomethylating)",
+     "MDS, AML, CMML",
+     "A",
+     "2004",
+     []
+    ],
+    [
+     "Vorinostat, romidepsin",
+     "HDAC",
+     "Cutaneous T-cell lymphoma",
+     "A",
+     "2006",
+     []
+    ],
+    [
+     "Revumenib",
+     "Menin–KMT2A interaction",
+     "KMT2A-rearranged acute leukaemia",
+     "A",
+     "2024",
+     []
+    ],
+    [
+     "SMARCA2 degraders",
+     "SMARCA2 (paralog dependence)",
+     "SMARCA4-deficient lung cancer",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "telo": {
+   "name": "Telomere maintenance",
+   "short": "Telomere",
+   "fr": {
+    "note": "TERT promoter: most frequent non-coding driver"
+   },
+   "refs": [
+    7,
+    20,
+    21
+   ],
+   "mech": "Telomeres shorten with each division and critically short telomeres trigger crisis. Cancers either reactivate telomerase (TERT) or use ALT, a recombination-based mechanism normally suppressed by the ATRX–DAXX histone H3.3 chaperone.",
+   "lesion": "TERT promoter mutations (C228T, C250T) create new ETS/GABP binding sites; they were found in melanoma [20, 21] and are the most common non-coding driver in whole genomes [7]. TERT is also amplified and rearranged, and MYC activates it. ATRX/DAXX loss gives ALT.",
+   "where": "TERT promoter: melanoma, glioblastoma, oligodendroglioma, bladder, hepatocellular, aggressive thyroid. ALT: pancreatic neuroendocrine tumours, IDH-mutant astrocytoma, sarcomas, often from tissues with low replicative activity [7].",
+   "vuln": "Imetelstat, a telomerase-targeting oligonucleotide, is approved in MDS. Telomerase-dependent nucleosides such as 6-thio-dG are experimental.",
+   "steps": [
+    [
+     "Telomeres shorten",
+     "Conventional replication cannot fully copy chromosome ends, so telomeres lose sequence with each division. The shelterin complex caps the ends.",
+     [
+      69
+     ]
+    ],
+    [
+     "Crisis",
+     "Critically short telomeres trigger p53- and RB-dependent senescence. Cells without those checkpoints keep dividing until chromosome fusions and breakage cause crisis.",
+     [
+      69
+     ]
+    ],
+    [
+     "Telomerase extends the ends",
+     "TERT uses its RNA template TERC to add TTAGGG repeats. Telomerase activity is present in most tumours but absent from most normal somatic tissues.",
+     [
+      69
+     ]
+    ],
+    [
+     "Promoter mutations reactivate TERT",
+     "C228T and C250T mutations create new ETS-factor binding sites that recruit GABP and switch TERT on.",
+     [
+      20,
+      21
+     ]
+    ],
+    [
+     "Alternative lengthening",
+     "ATRX or DAXX loss permits ALT, which maintains telomeres by recombination.",
+     [
+      70
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1994",
+     "Telomerase activity is detected in most immortal cell lines and tumours but not in normal somatic tissues.",
+     [
+      69
+     ]
+    ],
+    [
+     "2011",
+     "ATRX and DAXX mutations correlate with ALT in tumours.",
+     [
+      70
+     ]
+    ],
+    [
+     "2013",
+     "Highly recurrent TERT promoter mutations in melanoma.",
+     [
+      20,
+      21
+     ]
+    ],
+    [
+     "2020",
+     "TERT promoter mutation is the most frequent non-coding driver in whole cancer genomes.",
+     [
+      7
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Imetelstat",
+     "Telomerase (oligonucleotide inhibitor)",
+     "Transfusion-dependent lower-risk MDS",
+     "A",
+     "2024",
+     []
+    ],
+    [
+     "Telomerase-dependent nucleosides (6-thio-dG)",
+     "Telomere integrity",
+     "TERT-expressing solid tumours",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "apop": {
+   "name": "Intrinsic apoptosis",
+   "short": "Apoptosis",
+   "fr": {
+    "note": "MCL1 among top focal amplifications"
+   },
+   "refs": [
+    3,
+    11
+   ],
+   "mech": "BH3-only sensors (BIM, PUMA, NOXA) neutralise anti-apoptotic BCL2, BCL-XL and MCL1. This frees BAX and BAK to permeabilise the mitochondrial outer membrane, and cytochrome c drives APAF1, caspase-9 and caspase-3. The extrinsic arm runs through death receptors and caspase-8.",
+   "lesion": "BCL2 t(14;18) in follicular lymphoma; focal amplification of MCL1 and BCL2L1, among the most frequent in cancer [11]; loss of p53-driven PUMA/NOXA induction; CASP8 mutation in head and neck and cervical cancer; BAX frameshifts in MSI tumours.",
+   "where": "Lymphoid neoplasms (BCL2), breast and lung (MCL1), and functionally most TP53-mutant tumours.",
+   "vuln": "Venetoclax (BCL2) in CLL and AML. MCL1 inhibitors are limited by cardiac toxicity. BH3 profiling measures how close a tumour is to the apoptotic threshold.",
+   "steps": [
+    [
+     "Sensors detect damage",
+     "BH3-only proteins are induced by p53 (PUMA, NOXA), released from the cytoskeleton (BIM, BMF) or cleaved by caspase-8 (BID).",
+     [
+      3
+     ]
+    ],
+    [
+     "Guardians hold the line",
+     "BCL2, BCL-XL and MCL1 bind and neutralise BH3-only proteins and BAX/BAK.",
+     [
+      71
+     ]
+    ],
+    [
+     "The mitochondria are permeabilised",
+     "Freed BAX and BAK oligomerise in the mitochondrial outer membrane. Cytochrome c escapes, forms the apoptosome with APAF1 and activates caspase-9, then caspase-3 and caspase-7.",
+     [
+      3
+     ]
+    ],
+    [
+     "Survival as an oncogenic function",
+     "BCL2 promotes survival rather than proliferation, and it cooperates with MYC to transform cells.",
+     [
+      71
+     ]
+    ],
+    [
+     "BH3 mimetics",
+     "Venetoclax mimics BH3 proteins and selectively inhibits BCL2. Because it spares BCL-XL, it avoids the platelet loss seen with earlier compounds.",
+     [
+      72
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1988",
+     "BCL2 promotes haemopoietic cell survival and cooperates with c-myc.",
+     [
+      71
+     ]
+    ],
+    [
+     "2013",
+     "ABT-199 (venetoclax) is selective for BCL2 and spares platelets.",
+     [
+      72
+     ]
+    ],
+    [
+     "2016",
+     "Venetoclax gives a 79% response rate in relapsed CLL.",
+     [
+      73
+     ]
+    ],
+    [
+     "2020",
+     "VIALE-A: azacitidine plus venetoclax extends median survival from 9.6 to 14.7 months in unfit AML.",
+     [
+      74
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Venetoclax",
+     "BCL2",
+     "CLL; AML with azacitidine or low-dose cytarabine",
+     "A",
+     "2016",
+     [
+      73,
+      74
+     ]
+    ],
+    [
+     "Navitoclax",
+     "BCL2 / BCL-XL",
+     "Myelofibrosis and solid tumours",
+     "T",
+     "",
+     []
+    ],
+    [
+     "MCL1 inhibitors",
+     "MCL1",
+     "Myeloma, AML (cardiac toxicity a barrier)",
+     "T",
+     "",
+     []
+    ]
+   ]
+  },
+  "immune": {
+   "name": "Antigen presentation & immune evasion",
+   "short": "Immune evasion",
+   "fr": {
+    "v": 40,
+    "ver": true,
+    "lab": "40% HLA LOH in NSCLC",
+    "src": 17
+   },
+   "refs": [
+    2,
+    14,
+    17
+   ],
+   "mech": "HLA class I molecules, which need β2-microglobulin, present neoantigens to CD8 T cells. IFN-γ signals through IFNGR, JAK1/2, STAT1 and IRF1 to raise HLA and PD-L1. Tumours escape by losing presentation, losing interferon sensing or engaging checkpoints.",
+   "lesion": "Allele-specific HLA loss of heterozygosity in 40% of NSCLC [17]; B2M truncation (MSI colorectal, melanoma resistance); JAK1/2 loss (acquired anti-PD-1 resistance); 9p24 CD274/PDCD1LG2 amplification (Hodgkin lymphoma). Oncogenic pathways (WNT/β-catenin, PTEN loss) also exclude T cells.",
+   "where": "Six immune subtypes cut across all 33 TCGA cancer types [14]. Mutation load, MSI, APOBEC activity and HLA status shape them.",
+   "vuln": "PD-1, PD-L1, CTLA-4 and LAG-3 blockade. Responses track neoantigen load and are undone by B2M or JAK loss.",
+   "steps": [
+    [
+     "Antigens are processed",
+     "The proteasome cuts tumour proteins, TAP moves peptides into the endoplasmic reticulum, and they are loaded onto HLA class I with β2-microglobulin.",
+     [
+      17
+     ]
+    ],
+    [
+     "T cells are primed",
+     "Dendritic cells present tumour antigen in lymph nodes. CTLA-4 limits co-stimulation, and blocking it enhances anti-tumour immunity.",
+     [
+      75
+     ]
+    ],
+    [
+     "Effector T cells attack",
+     "CD8 T cells secrete IFN-γ. In the tumour, IFNGR–JAK1/2–STAT1–IRF1 signalling raises HLA and PD-L1 (adaptive resistance).",
+     [
+      76
+     ]
+    ],
+    [
+     "Checkpoints brake the attack",
+     "PD-1 on T cells binds PD-L1 and dampens killing. Response to PD-1 blockade tracks tumour mutation burden.",
+     [
+      78
+     ]
+    ],
+    [
+     "How cancer escapes",
+     "Loss of JAK1/2 or B2M causes acquired resistance to PD-1 blockade, and allele-specific HLA loss removes neoantigen presentation.",
+     [
+      76,
+      17
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1996",
+     "CTLA-4 blockade enhances anti-tumour immunity in mice.",
+     [
+      75
+     ]
+    ],
+    [
+     "2010",
+     "Ipilimumab improves overall survival in metastatic melanoma.",
+     [
+      77
+     ]
+    ],
+    [
+     "2015",
+     "Mutation burden determines sensitivity to PD-1 blockade in NSCLC.",
+     [
+      78
+     ]
+    ],
+    [
+     "2016",
+     "JAK1/2 and B2M mutations underlie acquired resistance to PD-1 blockade in melanoma.",
+     [
+      76
+     ]
+    ],
+    [
+     "2017",
+     "HLA loss of heterozygosity occurs in 40% of NSCLC.",
+     [
+      17
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Ipilimumab",
+     "CTLA-4",
+     "Melanoma, RCC, NSCLC, MSI-H colorectal",
+     "A",
+     "2011",
+     [
+      77
+     ]
+    ],
+    [
+     "Pembrolizumab, nivolumab, cemiplimab",
+     "PD-1",
+     "Many solid tumours and Hodgkin lymphoma",
+     "A",
+     "2014",
+     [
+      78
+     ]
+    ],
+    [
+     "Atezolizumab, durvalumab, avelumab",
+     "PD-L1",
+     "NSCLC, SCLC, urothelial, Merkel cell, HCC",
+     "A",
+     "2016",
+     []
+    ],
+    [
+     "Relatlimab + nivolumab",
+     "LAG-3 + PD-1",
+     "Melanoma",
+     "A",
+     "2022",
+     []
+    ],
+    [
+     "Tebentafusp",
+     "gp100 peptide–HLA-A*02:01 × CD3 bispecific",
+     "HLA-A*02:01-positive uveal melanoma",
+     "A",
+     "2022",
+     []
+    ],
+    [
+     "Lifileucel",
+     "Tumour-infiltrating lymphocytes",
+     "Melanoma after PD-1 blockade",
+     "A",
+     "2024",
+     []
+    ]
+   ]
+  },
+  "metab": {
+   "name": "Metabolic & hypoxia sensing",
+   "short": "Metabolism",
+   "fr": {
+    "note": "VHL ≈90% of clear-cell renal; IDH in glioma and AML"
+   },
+   "refs": [
+    5,
+    22
+   ],
+   "mech": "The VHL ubiquitin ligase degrades prolyl-hydroxylated HIF-α in normal oxygen. Without VHL, HIF-2α is stable and drives VEGF, glycolysis and EPO programmes. Mutant IDH1 (R132) and IDH2 (R140, R172) gain a new activity that makes 2-hydroxyglutarate [22], which inhibits TET and Jumonji demethylases and links metabolism to chromatin.",
+   "lesion": "Biallelic VHL loss (3p loss plus mutation or methylation) in about 90% of clear-cell renal cancer; IDH1/2 hotspots in glioma, AML, cholangiocarcinoma and chondrosarcoma; SDH and FH loss in paraganglioma and hereditary renal cancer, accumulating succinate and fumarate.",
+   "where": "Kidney, glioma, AML, cholangiocarcinoma.",
+   "vuln": "Belzutifan (HIF-2α) for VHL disease and renal cancer; ivosidenib, enasidenib and vorasidenib (mutant IDH); anti-angiogenic VEGF/VEGFR drugs.",
+   "steps": [
+    [
+     "Oxygen is sensed",
+     "PHD enzymes use oxygen and α-ketoglutarate to hydroxylate prolines on HIF-α. VHL binds hydroxylated HIF-α and targets it for degradation.",
+     [
+      80
+     ]
+    ],
+    [
+     "Hypoxia stabilises HIF",
+     "Without oxygen, HIF-α escapes VHL, pairs with ARNT and drives VEGFA, GLUT1, LDHA and EPO.",
+     [
+      80
+     ]
+    ],
+    [
+     "VHL loss mimics hypoxia",
+     "VHL, the gene behind VHL disease, is inactivated in most clear-cell renal cancers, and HIF-2α becomes the driver.",
+     [
+      79,
+      81
+     ]
+    ],
+    [
+     "Oncometabolites block demethylases",
+     "Mutant IDH1 R132, discovered by glioblastoma genomics, makes 2-hydroxyglutarate. 2-HG, succinate (SDH loss) and fumarate (FH loss) all inhibit α-ketoglutarate-dependent dioxygenases such as TET and KDM enzymes.",
+     [
+      82,
+      22
+     ]
+    ],
+    [
+     "Energy is sensed",
+     "LKB1 activates AMPK when energy is low, and AMPK restrains mTORC1. STK11 loss removes this brake.",
+     [
+      6
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "1993",
+     "The VHL tumour suppressor gene is identified.",
+     [
+      79
+     ]
+    ],
+    [
+     "1999",
+     "VHL targets HIF for oxygen-dependent proteolysis.",
+     [
+      80
+     ]
+    ],
+    [
+     "2008",
+     "IDH1 R132 mutations are discovered in glioblastoma.",
+     [
+      82
+     ]
+    ],
+    [
+     "2009",
+     "Mutant IDH1 produces 2-hydroxyglutarate.",
+     [
+      22
+     ]
+    ],
+    [
+     "2018",
+     "Ivosidenib produces durable remissions in IDH1-mutant relapsed AML.",
+     [
+      84
+     ]
+    ],
+    [
+     "2021",
+     "Belzutifan gives a 49% response rate in VHL-disease renal cancer.",
+     [
+      81
+     ]
+    ],
+    [
+     "2023",
+     "INDIGO: vorasidenib extends progression-free survival (27.7 vs 11.1 months) in IDH-mutant low-grade glioma.",
+     [
+      83
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Belzutifan",
+     "HIF-2α",
+     "VHL-disease tumours; advanced renal cell carcinoma",
+     "A",
+     "2021",
+     [
+      81
+     ]
+    ],
+    [
+     "Ivosidenib",
+     "Mutant IDH1",
+     "AML, cholangiocarcinoma, MDS",
+     "A",
+     "2018",
+     [
+      84
+     ]
+    ],
+    [
+     "Olutasidenib",
+     "Mutant IDH1",
+     "Relapsed AML",
+     "A",
+     "2022",
+     []
+    ],
+    [
+     "Enasidenib",
+     "Mutant IDH2",
+     "Relapsed AML",
+     "A",
+     "2017",
+     []
+    ],
+    [
+     "Vorasidenib",
+     "Mutant IDH1/2 (brain-penetrant)",
+     "Grade 2 astrocytoma and oligodendroglioma",
+     "A",
+     "2024",
+     [
+      83
+     ]
+    ],
+    [
+     "Bevacizumab",
+     "VEGF-A",
+     "Colorectal, lung, renal, glioblastoma, ovarian, HCC",
+     "A",
+     "2004",
+     []
+    ],
+    [
+     "Sunitinib, axitinib, cabozantinib, lenvatinib",
+     "VEGFR kinases",
+     "Renal cell, hepatocellular, thyroid cancer",
+     "A",
+     "2006",
+     []
+    ]
+   ]
+  },
+  "splice": {
+   "name": "RNA splicing",
+   "short": "Splicing",
+   "fr": {
+    "note": "Myeloid neoplasms, CLL, uveal melanoma"
+   },
+   "refs": [
+    2
+   ],
+   "mech": "Core spliceosome factors recognise branch points (SF3B1) and 3′ splice sites (U2AF1), and SR proteins such as SRSF2 guide exon choice.",
+   "lesion": "Heterozygous hotspot mutations: SF3B1 K700E (MDS with ring sideroblasts, CLL, uveal melanoma, breast), U2AF1 S34/Q157 (MDS, lung adenocarcinoma), SRSF2 P95 (CMML). They change splice-site choice without abolishing splicing, and they are mutually exclusive, which implies cells tolerate only one.",
+   "where": "Myeloid neoplasms, CLL, uveal melanoma.",
+   "vuln": "Splicing modulators (SF3B1-targeted) and dependence on the remaining wild-type allele.",
+   "steps": [
+    [
+     "The spliceosome assembles",
+     "U1 snRNP binds the 5′ splice site; SF1 and U2AF bind the branch point and 3′ splice site; U2 snRNP, through SF3B1, base-pairs with the branch point.",
+     [
+      85
+     ]
+    ],
+    [
+     "Hotspots alter, not abolish",
+     "Mutations in U2AF1, SRSF2, ZRSR2 and SF3B1 occur in myelodysplasia and are mutually exclusive.",
+     [
+      85
+     ]
+    ],
+    [
+     "Mis-splicing has consequences",
+     "SF3B1 K700E uses cryptic 3′ splice sites, sending transcripts such as ABCB7 to nonsense-mediated decay. This links the mutation to ring sideroblasts.",
+     [
+      85
+     ]
+    ],
+    [
+     "A built-in vulnerability",
+     "Mutant cells depend on the remaining wild-type allele, which makes them more sensitive to spliceosome modulators.",
+     [
+      85
+     ]
+    ]
+   ],
+   "evidence": [
+    [
+     "2011",
+     "Frequent mutations of the splicing machinery in myelodysplasia.",
+     [
+      85
+     ]
+    ]
+   ],
+   "therapies": [
+    [
+     "Luspatercept",
+     "Activin/GDF ligand trap",
+     "Anaemia in lower-risk MDS, especially SF3B1-mutant ring-sideroblast MDS",
+     "A",
+     "2020",
+     []
+    ],
+    [
+     "SF3B modulators (H3B-8800)",
+     "SF3B1",
+     "Spliceosome-mutant myeloid neoplasms (limited activity)",
+     "T",
+     "",
+     []
+    ]
+   ]
+  }
+ },
+ "order": {
+  "tcga": [
+   "rtk",
+   "cc",
+   "p53",
+   "pi3k",
+   "myc",
+   "wnt",
+   "notch",
+   "hippo",
+   "tgfb",
+   "nrf2"
+  ],
+  "other": [
+   "ddr",
+   "chrom",
+   "telo",
+   "apop",
+   "immune",
+   "metab",
+   "splice"
+  ]
+ },
+ "nodes": [
+  [
+   "B2M",
+   "B2M",
+   "immune",
+   "T",
+   1.5,
+   50,
+   110,
+   "mutation, deletion",
+   "β2-microglobulin, the obligatory light chain of HLA class I. Biallelic loss abolishes antigen presentation.",
+   "MSI colorectal; melanoma with checkpoint-inhibitor resistance; lymphoma",
+   ""
+  ],
+  [
+   "HLA",
+   "HLA-A/B/C",
+   "immune",
+   "T",
+   3,
+   108,
+   110,
+   "LOH, mutation",
+   "Class I antigen-presenting molecules. Allele-specific loss of heterozygosity removes the alleles that present neoantigens [17].",
+   "NSCLC (LOH 40%), colorectal",
+   ""
+  ],
+  [
+   "CD274",
+   "CD274 (PD-L1)",
+   "immune",
+   "O",
+   1,
+   182,
+   110,
+   "amplification, IFN-induced expression",
+   "Checkpoint ligand for PD-1 on T cells; 9p24.1 amplification or adaptive induction by IFN-γ.",
+   "Hodgkin lymphoma, primary mediastinal B-cell lymphoma, some NSCLC",
+   "pembrolizumab, nivolumab, atezolizumab"
+  ],
+  [
+   "IFNGR1",
+   "IFNGR1",
+   "immune",
+   "T",
+   0.5,
+   252,
+   110,
+   "mutation, deletion",
+   "IFN-γ receptor. Loss blinds the tumour to T-cell–derived interferon.",
+   "melanoma (anti-CTLA-4 resistance)",
+   ""
+  ],
+  [
+   "JAK",
+   "JAK1/2",
+   "immune",
+   "D",
+   2,
+   230,
+   230,
+   "mutation, deletion",
+   "Kinases that relay IFN-γ signalling; loss of function confers acquired resistance to PD-1 blockade. JAK2 V617F is oncogenic in myeloproliferative neoplasms.",
+   "melanoma, MSI endometrial; MPN (JAK2 V617F)",
+   "ruxolitinib (MPN)"
+  ],
+  [
+   "STAT1",
+   "STAT1",
+   "immune",
+   "N",
+   0.3,
+   230,
+   330,
+   "",
+   "Transcription factor downstream of JAK1/2; induces IRF1, HLA and PD-L1.",
+   "",
+   ""
+  ],
+  [
+   "EGFR",
+   "EGFR",
+   "rtk",
+   "O",
+   5,
+   310,
+   110,
+   "mutation, amplification, EGFRvIII",
+   "ErbB receptor. L858R and exon-19 deletions in lung adenocarcinoma; amplification and EGFRvIII in glioblastoma.",
+   "lung adenocarcinoma (never-smokers), glioblastoma (~50%), head and neck",
+   "osimertinib, erlotinib, cetuximab, amivantamab"
+  ],
+  [
+   "ERBB2",
+   "ERBB2 (HER2)",
+   "rtk",
+   "O",
+   5,
+   370,
+   110,
+   "amplification, mutation",
+   "Ligand-less ErbB co-receptor. 17q12 amplification defines HER2-enriched breast cancer.",
+   "breast (HER2+), gastro-oesophageal, bladder, uterine serous",
+   "trastuzumab, pertuzumab, tucatinib, trastuzumab deruxtecan"
+  ],
+  [
+   "MET",
+   "MET",
+   "rtk",
+   "O",
+   2,
+   430,
+   110,
+   "amplification, exon-14 skipping",
+   "HGF receptor. Exon-14 skipping removes the CBL degron; amplification drives resistance to EGFR inhibitors.",
+   "lung adenocarcinoma, papillary renal (germline), gastric",
+   "capmatinib, tepotinib"
+  ],
+  [
+   "FGFR",
+   "FGFR1–3",
+   "rtk",
+   "O",
+   4,
+   490,
+   110,
+   "mutation, amplification, fusion",
+   "FGFR3 activating mutations and fusions in bladder cancer, FGFR2 fusions in cholangiocarcinoma, FGFR1 amplification in squamous lung and breast cancer.",
+   "bladder, cholangiocarcinoma, lung squamous, breast",
+   "erdafitinib, pemigatinib, futibatinib"
+  ],
+  [
+   "PDGFRA",
+   "KIT/PDGFRA",
+   "rtk",
+   "O",
+   2,
+   550,
+   110,
+   "mutation, amplification",
+   "Class III RTKs. Activating mutations drive GIST; 4q12 amplification in glioma.",
+   "GIST, mastocytosis, acral and mucosal melanoma, glioblastoma",
+   "imatinib, avapritinib, ripretinib"
+  ],
+  [
+   "FUS",
+   "ALK/ROS1/RET/NTRK",
+   "rtk",
+   "O",
+   2,
+   630,
+   165,
+   "fusion",
+   "Rearrangements fuse kinase domains to dimerising partners (EML4–ALK, CD74–ROS1, KIF5B–RET, ETV6–NTRK3).",
+   "lung adenocarcinoma (never-smokers), thyroid (RET), paediatric tumours (NTRK)",
+   "alectinib, lorlatinib, entrectinib, selpercatinib, larotrectinib"
+  ],
+  [
+   "PTPN11",
+   "PTPN11 (SHP2)",
+   "rtk",
+   "O",
+   1,
+   360,
+   185,
+   "mutation",
+   "Phosphatase scaffold relaying RTK signals to SOS and RAS; activating mutations in JMML and Noonan syndrome.",
+   "JMML, AML",
+   "SHP2 inhibitors (trials)"
+  ],
+  [
+   "NF1",
+   "NF1",
+   "rtk",
+   "T",
+   5,
+   290,
+   300,
+   "mutation, deletion",
+   "RasGAP that speeds RAS-GTP hydrolysis; loss raises RAS-GTP without a RAS mutation.",
+   "melanoma (BRAF/RAS wild-type), glioblastoma, lung adenocarcinoma, MPNST",
+   "selumetinib (plexiform neurofibroma)"
+  ],
+  [
+   "KRAS",
+   "KRAS",
+   "rtk",
+   "O",
+   9,
+   350,
+   260,
+   "mutation, amplification",
+   "The most frequently mutated oncogene. G12, G13 and Q61 lesions impair GAP-stimulated GTP hydrolysis.",
+   "pancreas (>90%), colorectal (~40%), lung adenocarcinoma (~30%), endometrial",
+   "sotorasib, adagrasib (G12C); G12D and RAS(ON) inhibitors in trials"
+  ],
+  [
+   "NRAS",
+   "NRAS",
+   "rtk",
+   "O",
+   3,
+   420,
+   260,
+   "mutation",
+   "RAS isoform with a Q61 hotspot.",
+   "melanoma (~25%), AML, thyroid, myeloma",
+   "MEK inhibitors (modest)"
+  ],
+  [
+   "HRAS",
+   "HRAS",
+   "rtk",
+   "O",
+   1,
+   480,
+   260,
+   "mutation",
+   "The first human oncogene isolated (T24 bladder carcinoma); needs farnesylation for membrane binding.",
+   "head and neck, bladder, thyroid; Costello syndrome",
+   "tipifarnib"
+  ],
+  [
+   "BRAF",
+   "BRAF",
+   "rtk",
+   "O",
+   7,
+   400,
+   350,
+   "mutation, fusion",
+   "Class I V600E signals as a RAS-independent monomer; class II and III mutants act as dimers or RAS-dependent amplifiers.",
+   "melanoma (~50%), papillary thyroid (~60%), colorectal (~10%), hairy-cell leukaemia",
+   "dabrafenib + trametinib, encorafenib + cetuximab"
+  ],
+  [
+   "MEK",
+   "MAP2K1/2 (MEK)",
+   "rtk",
+   "O",
+   1,
+   400,
+   430,
+   "mutation",
+   "Dual-specificity kinases that phosphorylate ERK: the narrowest point of the cascade.",
+   "melanoma, histiocytosis, lung adenocarcinoma",
+   "trametinib, cobimetinib, binimetinib"
+  ],
+  [
+   "ERK",
+   "MAPK1/3 (ERK)",
+   "rtk",
+   "N",
+   1,
+   400,
+   510,
+   "",
+   "Effector kinases that phosphorylate ETS and AP-1 factors and stabilise MYC; DUSP and SPRY feedback dampens upstream signalling.",
+   "",
+   "ERK inhibitors (trials)"
+  ],
+  [
+   "PIK3CA",
+   "PIK3CA",
+   "pi3k",
+   "O",
+   14,
+   560,
+   215,
+   "mutation, amplification",
+   "p110α catalytic subunit. Helical E542K/E545K and kinase H1047R hotspots; 3q26 gain in squamous cancers.",
+   "breast (~35%), endometrial, head and neck, colorectal, cervical",
+   "alpelisib, inavolisib"
+  ],
+  [
+   "PIK3R1",
+   "PIK3R1",
+   "pi3k",
+   "T",
+   3,
+   640,
+   240,
+   "mutation",
+   "p85α regulatory subunit; in-frame deletions relieve its inhibition of p110.",
+   "endometrial, glioblastoma",
+   ""
+  ],
+  [
+   "PTEN",
+   "PTEN",
+   "pi3k",
+   "T",
+   9,
+   650,
+   320,
+   "mutation, deletion, methylation",
+   "Lipid phosphatase that reverses PI3K (PIP3 to PIP2). Haploinsufficient, and also acts in the nucleus for genome stability.",
+   "endometrial, glioblastoma, prostate, melanoma; Cowden syndrome",
+   "capivasertib; PI3Kβ inhibitors (trials)"
+  ],
+  [
+   "AKT1",
+   "AKT1–3",
+   "pi3k",
+   "O",
+   1,
+   570,
+   330,
+   "mutation, amplification",
+   "AKT1 E17K in the PH domain targets AKT to the membrane; AKT2 amplified in ovarian and pancreatic cancer.",
+   "breast, endometrial; Proteus syndrome (mosaic)",
+   "capivasertib"
+  ],
+  [
+   "TSC",
+   "TSC1/2",
+   "pi3k",
+   "T",
+   2,
+   530,
+   410,
+   "mutation",
+   "GAP for RHEB; phosphorylation by AKT disables it and activates mTORC1.",
+   "bladder, PEComa; tuberous sclerosis",
+   "everolimus"
+  ],
+  [
+   "MTOR",
+   "MTOR",
+   "pi3k",
+   "O",
+   2,
+   600,
+   480,
+   "mutation",
+   "Kinase of mTORC1 and mTORC2; activating mutations in the FAT and kinase domains.",
+   "clear-cell renal, endometrial",
+   "everolimus, temsirolimus"
+  ],
+  [
+   "STK11",
+   "STK11 (LKB1)",
+   "pi3k",
+   "T",
+   2,
+   720,
+   380,
+   "mutation, deletion",
+   "Master kinase for AMPK and twelve related kinases. Loss lifts the energy-stress restraint on mTORC1 and yields an immune-cold tumour.",
+   "lung adenocarcinoma (~15%), cervical; Peutz–Jeghers (germline)",
+   ""
+  ],
+  [
+   "AMPK",
+   "AMPK",
+   "pi3k",
+   "N",
+   0.5,
+   700,
+   460,
+   "",
+   "Energy sensor that inhibits mTORC1 through TSC2 and RAPTOR.",
+   "",
+   "metformin (indirect)"
+  ],
+  [
+   "KEAP1",
+   "KEAP1",
+   "nrf2",
+   "T",
+   2,
+   770,
+   260,
+   "mutation, deletion, methylation",
+   "CUL3 substrate adaptor that targets NRF2; its cysteines sense oxidants.",
+   "lung adenocarcinoma (~17%), lung squamous",
+   ""
+  ],
+  [
+   "CUL3",
+   "CUL3",
+   "nrf2",
+   "T",
+   1,
+   840,
+   210,
+   "mutation, deletion",
+   "Cullin scaffold of the KEAP1 ubiquitin ligase.",
+   "lung squamous, papillary renal type 2",
+   ""
+  ],
+  [
+   "NFE2L2",
+   "NFE2L2 (NRF2)",
+   "nrf2",
+   "O",
+   2,
+   800,
+   360,
+   "mutation, amplification",
+   "Antioxidant transcription factor; DLG and ETGE motif mutations escape KEAP1.",
+   "lung squamous, oesophageal squamous, head and neck, liver",
+   ""
+  ],
+  [
+   "VEGFA",
+   "VEGFA",
+   "metab",
+   "N",
+   1,
+   660,
+   42,
+   "amplification, HIF-driven expression",
+   "HIF target and the principal angiogenic ligand.",
+   "clear-cell renal, hepatocellular, glioblastoma",
+   "bevacizumab, VEGFR inhibitors"
+  ],
+  [
+   "VHL",
+   "VHL",
+   "metab",
+   "T",
+   4,
+   660,
+   570,
+   "mutation, deletion, methylation",
+   "Substrate receptor of the E3 ligase that degrades hydroxylated HIF-α; gatekeeper of clear-cell renal cancer.",
+   "clear-cell renal (~90% inactivated), haemangioblastoma; VHL disease",
+   "belzutifan (HIF-2α)"
+  ],
+  [
+   "HIF",
+   "HIF1A/EPAS1",
+   "metab",
+   "O",
+   1,
+   660,
+   720,
+   "stabilised protein, EPAS1 mutation",
+   "Hypoxia-inducible transcription factors driving VEGF, glycolysis and EPO; HIF-2α is the driver in renal cancer.",
+   "clear-cell renal, paraganglioma (EPAS1)",
+   "belzutifan"
+  ],
+  [
+   "IDH1",
+   "IDH1",
+   "metab",
+   "O",
+   3,
+   760,
+   575,
+   "mutation",
+   "R132H neomorph converts α-ketoglutarate to 2-hydroxyglutarate [22], inhibiting TET and KDM enzymes and producing CpG-island hypermethylation.",
+   "lower-grade glioma (>70%), AML, cholangiocarcinoma, chondrosarcoma",
+   "ivosidenib, vorasidenib"
+  ],
+  [
+   "IDH2",
+   "IDH2",
+   "metab",
+   "O",
+   1,
+   840,
+   575,
+   "mutation",
+   "Mitochondrial isoform; R140 and R172 neomorphs also make 2-hydroxyglutarate.",
+   "AML, angioimmunoblastic T-cell lymphoma",
+   "enasidenib"
+  ],
+  [
+   "FZD",
+   "FZD/LRP6",
+   "wnt",
+   "N",
+   0.5,
+   910,
+   110,
+   "",
+   "WNT receptor complex; the signalosome sequesters AXIN and inhibits GSK3.",
+   "",
+   "porcupine inhibitors act upstream"
+  ],
+  [
+   "RNF43",
+   "RNF43/ZNRF3",
+   "wnt",
+   "T",
+   2,
+   980,
+   110,
+   "mutation",
+   "Transmembrane E3 ligases that clear FZD from the cell surface; R-spondin–LGR5 antagonises them.",
+   "MSI colorectal, gastric, endometrial, mucinous pancreatic",
+   "porcupine inhibitors (trials)"
+  ],
+  [
+   "AXIN1",
+   "AXIN1/2",
+   "wnt",
+   "T",
+   1,
+   910,
+   250,
+   "mutation",
+   "Scaffold of the β-catenin destruction complex.",
+   "hepatocellular (~8%)",
+   ""
+  ],
+  [
+   "APC",
+   "APC",
+   "wnt",
+   "T",
+   6,
+   990,
+   250,
+   "mutation, deletion",
+   "Truncations remove β-catenin and AXIN binding repeats; the classic gatekeeper of colorectal tumorigenesis.",
+   "colorectal (~80%), gastric; familial adenomatous polyposis",
+   ""
+  ],
+  [
+   "GSK3B",
+   "GSK3B",
+   "wnt",
+   "N",
+   0.3,
+   950,
+   320,
+   "",
+   "Priming-dependent kinase that marks β-catenin, MYC (T58) and cyclin D1 for degradation; inhibited by AKT.",
+   "",
+   ""
+  ],
+  [
+   "CTNNB1",
+   "CTNNB1",
+   "wnt",
+   "O",
+   3,
+   950,
+   430,
+   "mutation",
+   "β-catenin; exon-3 mutations at S33, S37, T41 and S45 abolish the phosphodegron.",
+   "hepatocellular (~25%), endometrioid, desmoid tumour, craniopharyngioma",
+   ""
+  ],
+  [
+   "TCF",
+   "TCF7L2/LEF1",
+   "wnt",
+   "D",
+   1,
+   980,
+   705,
+   "mutation, fusion",
+   "β-catenin partner transcription factors; transcribe MYC, CCND1, AXIN2 and LGR5.",
+   "colorectal",
+   ""
+  ],
+  [
+   "TGFBR2",
+   "TGFBR1/2",
+   "tgfb",
+   "T",
+   2,
+   1070,
+   110,
+   "mutation",
+   "Receptor serine/threonine kinases; TGFBR2 poly-A frameshifts mark MSI colorectal cancer.",
+   "MSI colorectal, gastric",
+   "TGFβ traps (trials)"
+  ],
+  [
+   "SMAD23",
+   "SMAD2/3",
+   "tgfb",
+   "T",
+   2,
+   1070,
+   250,
+   "mutation",
+   "Receptor-regulated SMADs phosphorylated by TGFBR1.",
+   "colorectal",
+   ""
+  ],
+  [
+   "SMAD4",
+   "SMAD4",
+   "tgfb",
+   "T",
+   4,
+   1110,
+   340,
+   "mutation, deletion",
+   "Common-mediator SMAD on 18q; homozygously deleted in pancreatic cancer; germline in juvenile polyposis.",
+   "pancreas (~30%), colorectal, gastric",
+   ""
+  ],
+  [
+   "FAT1",
+   "FAT1",
+   "hippo",
+   "T",
+   6,
+   1180,
+   110,
+   "mutation",
+   "Protocadherin that assembles a Hippo signalling complex; truncated in squamous cancers.",
+   "head and neck (~25%), lung squamous, cutaneous squamous",
+   ""
+  ],
+  [
+   "NF2",
+   "NF2",
+   "hippo",
+   "T",
+   2,
+   1180,
+   215,
+   "mutation, deletion",
+   "Merlin; recruits LATS to the membrane and inhibits CRL4-DCAF1.",
+   "mesothelioma (~40%), meningioma, schwannoma; NF2 syndrome",
+   "TEAD inhibitors (trials)"
+  ],
+  [
+   "LATS",
+   "LATS1/2",
+   "hippo",
+   "T",
+   2,
+   1190,
+   310,
+   "mutation, deletion",
+   "NDR kinases that phosphorylate YAP S127 and TAZ S89 for 14-3-3 retention and degradation.",
+   "mesothelioma, head and neck",
+   ""
+  ],
+  [
+   "YAP",
+   "YAP1/TAZ",
+   "hippo",
+   "O",
+   2,
+   1210,
+   420,
+   "amplification, fusion",
+   "Transcriptional co-activators; WWTR1–CAMTA1 and YAP1 fusions drive epithelioid haemangioendothelioma.",
+   "EHE, ependymoma, uveal melanoma (via GNAQ/11), cervical (11q22)",
+   "TEAD inhibitors (trials)"
+  ],
+  [
+   "TEAD",
+   "TEAD1–4",
+   "hippo",
+   "N",
+   0.5,
+   1210,
+   720,
+   "",
+   "DNA-binding partners of YAP/TAZ; their palmitoylation pocket is the target of new inhibitors.",
+   "",
+   "TEAD palmitoylation inhibitors (trials)"
+  ],
+  [
+   "NOTCH1",
+   "NOTCH1–3",
+   "notch",
+   "D",
+   4,
+   1300,
+   110,
+   "mutation, fusion",
+   "Oncogenic HD/PEST mutations in T-ALL (>50%); truncating loss in squamous carcinomas.",
+   "T-ALL, CLL, head and neck, lung squamous, oesophageal, cutaneous squamous",
+   "γ-secretase inhibitors"
+  ],
+  [
+   "FBXW7",
+   "FBXW7",
+   "notch",
+   "T",
+   4,
+   1360,
+   320,
+   "mutation, deletion",
+   "SCF substrate receptor that degrades NICD, MYC, cyclin E, MCL1 and JUN; R465, R479 and R505 hotspots.",
+   "endometrial, colorectal, T-ALL",
+   ""
+  ],
+  [
+   "RBPJ",
+   "RBPJ/MAML",
+   "notch",
+   "N",
+   1,
+   1320,
+   720,
+   "fusion",
+   "CSL DNA-binding factor, converted from repressor to activator by NICD and MAML.",
+   "",
+   ""
+  ],
+  [
+   "CDKN2A",
+   "CDKN2A (p16/ARF)",
+   "cc",
+   "T",
+   20,
+   800,
+   700,
+   "deletion, mutation, methylation",
+   "One locus, two suppressors: p16INK4a inhibits CDK4/6 and p14ARF inhibits MDM2. 9p21 homozygous deletion is among the most frequent focal deletions in cancer [11].",
+   "glioblastoma (~60%), mesothelioma, pancreas, melanoma (familial), lung squamous, bladder",
+   "CDK4/6 inhibitors (RB-intact tumours)"
+  ],
+  [
+   "CCND1",
+   "CCND1–3",
+   "cc",
+   "O",
+   5,
+   710,
+   790,
+   "amplification, translocation",
+   "D-type cyclins that activate CDK4/6; 11q13 amplification; t(11;14) in mantle-cell lymphoma.",
+   "ER+ breast, head and neck, oesophageal, mantle-cell lymphoma",
+   "palbociclib, ribociclib, abemaciclib"
+  ],
+  [
+   "CDK46",
+   "CDK4/6",
+   "cc",
+   "O",
+   4,
+   800,
+   790,
+   "amplification",
+   "G1 kinases that phosphorylate RB; CDK4 co-amplifies with MDM2 on 12q.",
+   "dedifferentiated liposarcoma, glioblastoma, melanoma",
+   "palbociclib, ribociclib, abemaciclib"
+  ],
+  [
+   "RB1",
+   "RB1",
+   "cc",
+   "T",
+   5,
+   800,
+   880,
+   "mutation, deletion",
+   "Pocket protein that represses E2F; the original two-hit tumour suppressor [18].",
+   "retinoblastoma, small-cell lung (~90%), osteosarcoma, neuroendocrine prostate",
+   "confers CDK4/6-inhibitor resistance; Aurora kinase dependence"
+  ],
+  [
+   "E2F",
+   "E2F1–3",
+   "cc",
+   "N",
+   1,
+   800,
+   975,
+   "amplification",
+   "S-phase transcription factors released from RB; E2F3 amplified in bladder cancer.",
+   "bladder",
+   ""
+  ],
+  [
+   "CCNE1",
+   "CCNE1/CDK2",
+   "cc",
+   "O",
+   4,
+   900,
+   880,
+   "amplification",
+   "Cyclin E–CDK2 completes RB inactivation and licenses replication; excess causes replication stress.",
+   "high-grade serous ovarian (~20%), uterine serous, gastric",
+   "CDK2 and PKMYT1 inhibitors (trials)"
+  ],
+  [
+   "CDKN1B",
+   "CDKN1B (p27)",
+   "cc",
+   "T",
+   1,
+   900,
+   790,
+   "mutation, deletion",
+   "CIP/KIP inhibitor of CDK2; haploinsufficient.",
+   "prostate, luminal breast, small-intestinal NET",
+   ""
+  ],
+  [
+   "CDKN1A",
+   "CDKN1A (p21)",
+   "cc",
+   "T",
+   1,
+   990,
+   870,
+   "mutation",
+   "CDK inhibitor induced by p53 and SMADs; mediates G1 arrest and senescence.",
+   "bladder",
+   ""
+  ],
+  [
+   "TP53",
+   "TP53",
+   "p53",
+   "T",
+   37,
+   1100,
+   880,
+   "mutation, deletion",
+   "The most frequently mutated gene in cancer. DNA-binding-domain missense hotspots, usually with loss of the wild-type allele; Li–Fraumeni syndrome when germline.",
+   "high-grade serous ovarian (~96%), lung squamous (~90%), most chromosomally unstable carcinomas",
+   "MDM2 antagonists (wild-type only); Y220C reactivators (trials)"
+  ],
+  [
+   "MDM2",
+   "MDM2",
+   "p53",
+   "O",
+   4,
+   1020,
+   975,
+   "amplification",
+   "E3 ligase for p53; 12q15 amplification in TP53-wild-type tumours.",
+   "dedifferentiated liposarcoma, glioblastoma, bladder",
+   "MDM2 antagonists (trials)"
+  ],
+  [
+   "MDM4",
+   "MDM4",
+   "p53",
+   "O",
+   3,
+   1110,
+   995,
+   "amplification",
+   "MDMX; binds p53 and masks its transactivation domain.",
+   "melanoma, retinoblastoma, breast",
+   ""
+  ],
+  [
+   "ATM",
+   "ATM",
+   "p53",
+   "T",
+   4,
+   1210,
+   965,
+   "mutation, deletion",
+   "Double-strand-break sensor kinase that phosphorylates CHK2 and p53 S15.",
+   "prostate, pancreas, CLL, mantle-cell lymphoma; ataxia-telangiectasia",
+   "PARP and ATR inhibitors (synthetic lethality)"
+  ],
+  [
+   "CHEK2",
+   "CHEK2",
+   "p53",
+   "T",
+   1,
+   1200,
+   870,
+   "mutation",
+   "Effector kinase phosphorylating p53 S20 and CDC25; germline 1100delC raises breast cancer risk.",
+   "breast, prostate",
+   ""
+  ],
+  [
+   "ATR",
+   "ATR",
+   "ddr",
+   "N",
+   1,
+   1290,
+   1010,
+   "mutation",
+   "Replication-stress sensor kinase. It is essential, so tumours rarely lose it and instead depend on it.",
+   "",
+   "ATR inhibitors (trials)"
+  ],
+  [
+   "BRCA1",
+   "BRCA1",
+   "ddr",
+   "T",
+   2,
+   1380,
+   850,
+   "mutation, methylation, deletion",
+   "Starts end resection and recruits PALB2–BRCA2; germline carriers have a 60–70% lifetime risk of breast cancer.",
+   "triple-negative breast, high-grade serous ovarian, prostate, pancreas",
+   "olaparib, niraparib, talazoparib; platinum"
+  ],
+  [
+   "PALB2",
+   "PALB2",
+   "ddr",
+   "T",
+   1,
+   1460,
+   850,
+   "mutation",
+   "Bridge between BRCA1 and BRCA2.",
+   "breast, pancreas",
+   "PARP inhibitors"
+  ],
+  [
+   "BRCA2",
+   "BRCA2",
+   "ddr",
+   "T",
+   3,
+   1540,
+   850,
+   "mutation",
+   "Loads RAD51 onto single-stranded DNA; loss yields signature SBS3 and microhomology deletions.",
+   "breast, ovarian, prostate, pancreas",
+   "PARP inhibitors, platinum"
+  ],
+  [
+   "RAD51C",
+   "RAD51C/D",
+   "ddr",
+   "T",
+   0.5,
+   1620,
+   850,
+   "mutation, methylation",
+   "RAD51 paralogs required for homologous recombination.",
+   "ovarian",
+   "PARP inhibitors"
+  ],
+  [
+   "MLH1",
+   "MLH1",
+   "ddr",
+   "T",
+   2,
+   1380,
+   960,
+   "methylation, mutation",
+   "MutLα component. Promoter hypermethylation (CIMP) is the commonest cause of sporadic MSI.",
+   "colorectal (~15% MSI), endometrial, gastric; Lynch syndrome",
+   "pembrolizumab, dostarlimab (dMMR)"
+  ],
+  [
+   "MSH2",
+   "MSH2/MSH6",
+   "ddr",
+   "T",
+   1,
+   1460,
+   960,
+   "mutation",
+   "MutSα mismatch recognition; germline in Lynch syndrome.",
+   "colorectal, endometrial, upper urinary tract",
+   "anti-PD-1 (dMMR)"
+  ],
+  [
+   "POLE",
+   "POLE",
+   "ddr",
+   "D",
+   1,
+   1540,
+   960,
+   "mutation",
+   "Exonuclease-domain hotspots (P286R, V411L) cripple proofreading and cause ultramutation (SBS10).",
+   "endometrial (~7%), colorectal",
+   "anti-PD-1"
+  ],
+  [
+   "ARID1A",
+   "ARID1A",
+   "chrom",
+   "T",
+   7,
+   80,
+   760,
+   "mutation",
+   "DNA-binding BAF subunit; truncated in about half of ovarian clear-cell carcinomas.",
+   "ovarian clear-cell and endometrioid, endometrial, gastric, bladder",
+   "EZH2 and ATR inhibitors (synthetic lethality, trials)"
+  ],
+  [
+   "SMARCA4",
+   "SMARCA4 (BRG1)",
+   "chrom",
+   "T",
+   3,
+   160,
+   760,
+   "mutation, deletion",
+   "ATPase of BAF complexes; loss leaves cells dependent on its paralog SMARCA2.",
+   "lung adenocarcinoma, SCCOHT, thoracic undifferentiated tumours",
+   "SMARCA2 degraders (trials)"
+  ],
+  [
+   "PBRM1",
+   "PBRM1",
+   "chrom",
+   "T",
+   3,
+   240,
+   760,
+   "mutation",
+   "PBAF subunit on 3p21; the second most mutated gene in clear-cell renal cancer (~40%).",
+   "clear-cell renal, cholangiocarcinoma",
+   ""
+  ],
+  [
+   "KMT2D",
+   "KMT2D",
+   "chrom",
+   "T",
+   7,
+   80,
+   850,
+   "mutation",
+   "COMPASS-like H3K4 mono-methyltransferase at enhancers.",
+   "follicular lymphoma and DLBCL, bladder, lung squamous, oesophageal",
+   ""
+  ],
+  [
+   "KMT2C",
+   "KMT2C",
+   "chrom",
+   "T",
+   6,
+   160,
+   850,
+   "mutation",
+   "Paralog of KMT2D in the same complex.",
+   "breast, bladder, many carcinomas",
+   ""
+  ],
+  [
+   "SETD2",
+   "SETD2",
+   "chrom",
+   "T",
+   3,
+   240,
+   850,
+   "mutation",
+   "The only H3K36 trimethyltransferase; links transcription to mismatch repair and splicing fidelity.",
+   "clear-cell renal, paediatric high-grade glioma, mastocytosis",
+   "WEE1 inhibitors (synthetic lethality, trials)"
+  ],
+  [
+   "KDM6A",
+   "KDM6A (UTX)",
+   "chrom",
+   "T",
+   3,
+   80,
+   940,
+   "mutation",
+   "X-linked H3K27 demethylase that escapes X inactivation; partner of KMT2C/D.",
+   "bladder (~25%), myeloma",
+   ""
+  ],
+  [
+   "EZH2",
+   "EZH2",
+   "chrom",
+   "D",
+   1,
+   160,
+   940,
+   "mutation, amplification",
+   "PRC2 H3K27 methyltransferase. Y641 gain of function in germinal-centre lymphoma; loss of function in myeloid disease.",
+   "follicular lymphoma, DLBCL; overexpressed in prostate",
+   "tazemetostat"
+  ],
+  [
+   "CREBBP",
+   "CREBBP/EP300",
+   "chrom",
+   "T",
+   4,
+   240,
+   940,
+   "mutation",
+   "Histone acetyltransferases that acetylate p53 and enhancer H3K27.",
+   "follicular lymphoma, DLBCL, bladder, lung squamous",
+   ""
+  ],
+  [
+   "DNMT3A",
+   "DNMT3A",
+   "chrom",
+   "T",
+   2,
+   80,
+   1020,
+   "mutation",
+   "De novo DNA methyltransferase; R882 is the commonest lesion in clonal haematopoiesis.",
+   "AML (~25%); clonal haematopoiesis",
+   "hypomethylating agents"
+  ],
+  [
+   "TET2",
+   "TET2",
+   "chrom",
+   "T",
+   2,
+   160,
+   1020,
+   "mutation",
+   "5-methylcytosine dioxygenase inhibited by 2-hydroxyglutarate, hence mutually exclusive with IDH1/2 in AML.",
+   "CMML, AML, MDS, AITL; clonal haematopoiesis",
+   "hypomethylating agents"
+  ],
+  [
+   "BAP1",
+   "BAP1",
+   "chrom",
+   "T",
+   2,
+   240,
+   1020,
+   "mutation, deletion",
+   "Deubiquitinase for H2AK119ub; germline in BAP1 tumour-predisposition syndrome.",
+   "metastatic uveal melanoma, mesothelioma, clear-cell renal, cholangiocarcinoma",
+   ""
+  ],
+  [
+   "TERT",
+   "TERT",
+   "telo",
+   "O",
+   10,
+   340,
+   760,
+   "promoter mutation, amplification, rearrangement",
+   "Telomerase catalytic subunit. Promoter mutations C228T and C250T create GABP-binding ETS sites [20, 21].",
+   "melanoma (~70%), glioblastoma (~80%), oligodendroglioma, bladder, hepatocellular",
+   "imetelstat (MDS)"
+  ],
+  [
+   "ATRX",
+   "ATRX/DAXX",
+   "telo",
+   "T",
+   3,
+   420,
+   760,
+   "mutation, deletion",
+   "Histone H3.3 chaperone complex; loss permits alternative lengthening of telomeres.",
+   "pancreatic NET (~40%), IDH-mutant astrocytoma, sarcomas",
+   ""
+  ],
+  [
+   "MYC",
+   "MYC/MYCN/MYCL",
+   "myc",
+   "O",
+   12,
+   520,
+   790,
+   "amplification, translocation",
+   "Master growth transcription factor; 8q24 is among the most common amplifications in cancer [11].",
+   "breast, ovarian, Burkitt lymphoma t(8;14), neuroblastoma (MYCN), SCLC (MYCL)",
+   "no approved direct inhibitor; BET and CDK9 inhibitors indirectly"
+  ],
+  [
+   "MAX",
+   "MAX",
+   "myc",
+   "D",
+   0.5,
+   600,
+   790,
+   "mutation",
+   "Obligate partner of MYC and of the repressors MXD and MGA; germline loss in pheochromocytoma.",
+   "pheochromocytoma, SCLC",
+   ""
+  ],
+  [
+   "MGA",
+   "MGA/MXD",
+   "myc",
+   "T",
+   2,
+   560,
+   880,
+   "mutation, deletion",
+   "MAX-binding repressors that oppose MYC.",
+   "lung adenocarcinoma, SCLC, CLL",
+   ""
+  ],
+  [
+   "SF3B1",
+   "SF3B1",
+   "splice",
+   "O",
+   2,
+   340,
+   1000,
+   "mutation",
+   "U2 snRNP branch-point protein; K700E causes cryptic 3′ splice-site use.",
+   "MDS with ring sideroblasts (~80%), CLL, uveal melanoma, breast",
+   "luspatercept (MDS anaemia); splicing modulators"
+  ],
+  [
+   "U2AF1",
+   "U2AF1/SRSF2",
+   "splice",
+   "O",
+   1,
+   420,
+   1000,
+   "mutation",
+   "3′ splice-site and exonic-enhancer recognition; hotspots U2AF1 S34/Q157 and SRSF2 P95.",
+   "MDS, CMML, AML, lung adenocarcinoma",
+   ""
+  ],
+  [
+   "CASP8",
+   "CASP8",
+   "apop",
+   "T",
+   2,
+   1620,
+   230,
+   "mutation",
+   "Initiator caspase of the extrinsic death-receptor pathway.",
+   "head and neck, cervical, breast",
+   ""
+  ],
+  [
+   "BCL2",
+   "BCL2/BCL-XL",
+   "apop",
+   "O",
+   1,
+   1480,
+   320,
+   "translocation, amplification",
+   "Anti-apoptotic proteins that sequester BAX and BAK; t(14;18) in follicular lymphoma; BCL2L1 amplified in solid tumours.",
+   "follicular lymphoma, CLL, DLBCL",
+   "venetoclax"
+  ],
+  [
+   "MCL1",
+   "MCL1",
+   "apop",
+   "O",
+   5,
+   1570,
+   320,
+   "amplification",
+   "Short-lived anti-apoptotic protein; 1q21 focal amplification is among the commonest in cancer [11].",
+   "breast, lung adenocarcinoma, myeloma",
+   "MCL1 inhibitors (trials)"
+  ],
+  [
+   "BAX",
+   "BAX/BAK",
+   "apop",
+   "T",
+   0.5,
+   1520,
+   420,
+   "mutation",
+   "Pore-forming effectors of mitochondrial outer-membrane permeabilisation; BAX frameshifts in MSI tumours.",
+   "MSI colorectal, gastric",
+   ""
+  ],
+  [
+   "CASP",
+   "Caspase-9/3",
+   "apop",
+   "N",
+   0.3,
+   1560,
+   520,
+   "",
+   "Executioner cascade downstream of the cytochrome c–APAF1 apoptosome.",
+   "",
+   ""
+  ]
+ ],
+ "edges": "IFNGR1>JAK JAK>STAT1 STAT1>CD274 STAT1>HLA B2M-HLA EGFR>PTPN11 ERBB2>PTPN11 MET>PTPN11 FGFR>PTPN11 PDGFRA>PTPN11 FUS>PTPN11 EGFR-ERBB2 PTPN11>KRAS PTPN11>NRAS PTPN11>HRAS NF1|KRAS NF1|NRAS NF1|HRAS KRAS>BRAF NRAS>BRAF HRAS>BRAF BRAF>MEK MEK>ERK ERK>MYC ERK>CCND1 ERBB2>PIK3CA EGFR>PIK3CA MET>PIK3CA KRAS>PIK3CA PIK3R1|PIK3CA PIK3CA>AKT1 PTEN|AKT1 AKT1|TSC TSC|MTOR STK11>AMPK AMPK|MTOR AKT1>MDM2 AKT1|GSK3B AKT1>NFE2L2 MTOR>HIF KEAP1|NFE2L2 CUL3-KEAP1 VHL|HIF HIF>VEGFA IDH1|TET2 IDH2|TET2 RNF43|FZD FZD|AXIN1 AXIN1-APC AXIN1|CTNNB1 APC|CTNNB1 GSK3B|CTNNB1 CTNNB1>TCF TCF>MYC TCF>CCND1 GSK3B|MYC TGFBR2>SMAD23 SMAD23-SMAD4 SMAD4>CDKN1A SMAD4|MYC FAT1>LATS NF2>LATS LATS|YAP YAP>TEAD NOTCH1>RBPJ FBXW7|NOTCH1 FBXW7|MYC FBXW7|CCNE1 FBXW7|MCL1 RBPJ>MYC CCND1>CDK46 CDKN2A|CDK46 CDK46|RB1 RB1|E2F E2F>CCNE1 CCNE1|RB1 CDKN1A|CCNE1 CDKN1B|CCNE1 CDKN2A|MDM2 E2F>CDKN2A MYC>CDK46 MYC|CDKN1A MYC>TERT MYC-MAX MGA|MYC MDM2|TP53 MDM4|TP53 TP53>MDM2 TP53>CDKN1A TP53>BAX ATM>CHEK2 ATM>TP53 CHEK2>TP53 ATR>TP53 CREBBP>TP53 BCL2|BAX MCL1|BAX BAX>CASP CASP8>CASP ATM>BRCA1 BRCA1-PALB2 PALB2-BRCA2 BRCA2>RAD51C MLH1-MSH2 SETD2>MSH2 SMARCA4|EZH2 ARID1A-SMARCA4 PBRM1-SMARCA4 KDM6A|EZH2 KMT2D-KDM6A KMT2C-KMT2D TET2|DNMT3A EZH2|CDKN2A",
+ "stats": [
+  [
+   "299",
+   "driver genes from 9,423 exomes, 33 cancer types",
+   2
+  ],
+  [
+   "89%",
+   "of tumours hit at least one of ten canonical pathways",
+   1
+  ],
+  [
+   "4–5",
+   "driver mutations in an average cancer genome",
+   7
+  ],
+  [
+   "57%",
+   "carry at least one potentially actionable alteration",
+   1
+  ],
+  [
+   "19.6%",
+   "of all tumours mutate an SWI/SNF subunit",
+   16
+  ]
+ ],
+ "cancers": [
+  [
+   "SKCM",
+   "Melanoma",
+   [
+    4,
+    1,
+    3,
+    1,
+    2,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  [
+   "THCA",
+   "Thyroid",
+   [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  [
+   "PAAD",
+   "Pancreas",
+   [
+    4,
+    1,
+    3,
+    4,
+    2,
+    1,
+    0,
+    0,
+    3,
+    0
+   ]
+  ],
+  [
+   "LUAD",
+   "Lung adeno",
+   [
+    4,
+    2,
+    3,
+    3,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2
+   ]
+  ],
+  [
+   "CRC",
+   "Colorectal",
+   [
+    4,
+    2,
+    1,
+    3,
+    2,
+    4,
+    1,
+    1,
+    3,
+    0
+   ]
+  ],
+  [
+   "GBM",
+   "Glioblastoma",
+   [
+    4,
+    3,
+    4,
+    4,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  ],
+  [
+   "LUSC",
+   "Lung squamous",
+   [
+    2,
+    4,
+    4,
+    4,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2
+   ]
+  ],
+  [
+   "HNSC",
+   "Head & neck",
+   [
+    2,
+    3,
+    4,
+    4,
+    2,
+    1,
+    2,
+    2,
+    2,
+    1
+   ]
+  ],
+  [
+   "BRCA",
+   "Breast",
+   [
+    2,
+    3,
+    3,
+    3,
+    3,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  [
+   "UCEC",
+   "Endometrial",
+   [
+    3,
+    4,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  [
+   "OV",
+   "Ovarian HGS",
+   [
+    2,
+    2,
+    3,
+    4,
+    3,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  ],
+  [
+   "STAD",
+   "Stomach",
+   [
+    3,
+    3,
+    2,
+    3,
+    2,
+    2,
+    1,
+    1,
+    2,
+    1
+   ]
+  ],
+  [
+   "BLCA",
+   "Bladder",
+   [
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  [
+   "LIHC",
+   "Liver",
+   [
+    1,
+    1,
+    2,
+    3,
+    2,
+    3,
+    0,
+    0,
+    1,
+    1
+   ]
+  ],
+  [
+   "LGG",
+   "Lower-grade glioma",
+   [
+    2,
+    1,
+    1,
+    3,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ]
+  ],
+  [
+   "PRAD",
+   "Prostate",
+   [
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  [
+   "KIRC",
+   "Kidney clear-cell",
+   [
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  [
+   "AML",
+   "Acute myeloid",
+   [
+    3,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ ],
+ "hallmarks": [
+  [
+   "prolif",
+   "Sustaining proliferative signalling"
+  ],
+  [
+   "suppress",
+   "Evading growth suppressors"
+  ],
+  [
+   "death",
+   "Resisting cell death"
+  ],
+  [
+   "immortal",
+   "Replicative immortality"
+  ],
+  [
+   "vasc",
+   "Inducing vasculature"
+  ],
+  [
+   "invasion",
+   "Invasion & metastasis"
+  ],
+  [
+   "metab",
+   "Reprogramming metabolism"
+  ],
+  [
+   "immune",
+   "Avoiding immune destruction"
+  ],
+  [
+   "genome",
+   "Genome instability (enabling)"
+  ],
+  [
+   "inflam",
+   "Tumour-promoting inflammation (enabling)"
+  ],
+  [
+   "plastic",
+   "Phenotypic plasticity (2022)"
+  ],
+  [
+   "epigen",
+   "Non-mutational epigenetic reprogramming (2022)"
+  ],
+  [
+   "senesc",
+   "Senescent cells (2022)"
+  ],
+  [
+   "microb",
+   "Polymorphic microbiomes (2022)"
+  ]
+ ],
+ "hallmarkMap": {
+  "rtk": "prolif:2 death:1 invasion:1 metab:1 immune:1",
+  "pi3k": "prolif:2 death:2 metab:2 vasc:1 immune:1",
+  "cc": "suppress:2 senesc:2 prolif:1",
+  "p53": "suppress:2 death:2 genome:2 senesc:2 metab:1",
+  "myc": "prolif:2 metab:2 immortal:1 plastic:1 immune:1",
+  "wnt": "prolif:2 plastic:2 immune:1 invasion:1",
+  "notch": "plastic:2 prolif:1 suppress:1",
+  "hippo": "prolif:2 plastic:1 invasion:1 death:1",
+  "tgfb": "suppress:2 invasion:2 immune:1 inflam:1 plastic:1",
+  "nrf2": "metab:2 death:1",
+  "ddr": "genome:2 immune:1",
+  "chrom": "epigen:2 plastic:2 suppress:1",
+  "telo": "immortal:2 genome:1",
+  "apop": "death:2",
+  "immune": "immune:2 inflam:1",
+  "metab": "metab:2 epigen:2 vasc:2",
+  "splice": "plastic:1 prolif:1"
+ },
+ "principles": [
+  [
+   "Convergence",
+   "Hundreds of driver genes (299 in the PanCancer driver census [2]; saturation analysis predicted that many more rare ones remain [10]) funnel into a small number of circuits. 89% of TCGA tumours carry a driver lesion in one of only ten pathways [1], and the average genome has four to five drivers [7]. Selection acts on pathway output, not on individual genes."
+  ],
+  [
+   "Two accelerators, two brakes",
+   "The minimal topology of most carcinomas is one activated growth-factor axis (RTK–RAS–MAPK or PI3K–mTOR) plus disabled RB and p53 checkpoints [6]. The two axes converge on MYC, cyclin D and mTORC1. The 9p21 deletion of CDKN2A shows the economy of selection: one event removes p16 (RB control) and ARF (p53 control)."
+  ],
+  [
+   "Mutual exclusivity reveals the unit of selection",
+   "RTK, RAS and RAF lesions rarely co-occur in one tumour, and neither do TP53 and MDM2 lesions [1]. Once a pathway is switched, a second hit adds little or is harmful (oncogene-induced stress). Co-occurrence instead marks synergy, as with PI3K and NRF2 [1] or multiple Hippo lesions."
+  ],
+  [
+   "Tissue decides which gene",
+   "The pathway is shared but the gene is chosen by the cell of origin: KRAS in pancreas, BRAF in thyroid and melanoma, EGFR in glioblastoma, APC in colon. Molecular classification of 10,000 tumours is dominated by tissue of origin [15]. Notch is oncogenic in T cells and suppressive in squamous epithelia."
+  ],
+  [
+   "Gatekeepers and caretakers",
+   "Gatekeepers (APC, RB1, TP53, VHL) control cell number directly; Knudson's two hits [18] usually take the form of a point mutation plus loss of heterozygosity. Caretakers (BRCA1/2, MMR, POLE) raise the mutation rate and leave signatures that record a tumour's history [8, 13]."
+  ],
+  [
+   "Drivers are necessary but not sufficient",
+   "Normal sun-exposed skin and oesophagus carry clones with NOTCH1, TP53 and FAT1 driver mutations at high density [24], with the same dN/dS selection seen in cancers [12]. Transformation needs combinations, tissue context and time."
+  ],
+  [
+   "Chromatin is a second genome to break",
+   "SWI/SNF alone is mutated in about one fifth of tumours [16], and enhancer regulators (KMT2C/D, KDM6A, CREBBP) rank among the most mutated genes. IDH-mutant 2-hydroxyglutarate links metabolism to methylation [22]. Hanahan's 2022 framework adds epigenetic reprogramming and plasticity [5]."
+  ],
+  [
+   "Immortality and structure come from outside the exome",
+   "TERT promoter mutations are the most frequent non-coding driver [7, 20, 21]. Chromothripsis and complex structural variants, often early events, amplify or delete several drivers at once [7, 26]. Arm-level copy-number change (8q gain for MYC; 9p, 17p and 18q loss) is a major force in its own right [11]."
+  ],
+  [
+   "Tumours must also hide",
+   "Immune escape is a selected phenotype: HLA LOH in 40% of NSCLC [17], B2M and JAK1/2 loss, and pathway-driven T-cell exclusion. Six immune subtypes cut across tissues [14]. MSI and POLE ultramutation make tumours visible, which is why checkpoint blockade works there [2]."
+  ],
+  [
+   "Vulnerabilities follow the wiring",
+   "Oncogene addiction [25] explains why switching off a dominant node (BCR-ABL, EGFR, BRAF, KRAS G12C) can collapse a tumour. Synthetic lethality explains PARP inhibition in HR-deficient cancer [23]. 57% of tumours have at least one actionable lesion and 30% have several [1]; MSK-IMPACT confirms similar rates in metastatic disease [19]. Mutual exclusivity and feedback maps point to rational combinations."
+  ]
+ ]
+}

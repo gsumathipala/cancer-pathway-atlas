@@ -1,0 +1,60 @@
+Copyright © 2026 Saranga Sumathipala. All rights reserved.
+
+This software, its source code, its curated datasets and its documentation
+(together, "the Work") are the exclusive property of Saranga Sumathipala and
+are protected by copyright law and international copyright treaties.
+
+NO LICENCE IS GRANTED. No permission is given to any person to use, copy,
+modify, merge, publish, distribute, sublicense, sell, host, mirror, adapt,
+translate, reverse engineer, create derivative works from, or train any
+machine-learning or artificial-intelligence system on the Work, in whole or
+in part, by any means and in any medium, whether or not for commercial
+advantage, except with the prior express written permission of the copyright
+holder.
+
+Viewing this repository, or a deployed instance of it, does not grant any
+licence.
+
+The curated datasets are asserted as original works of authorship. They
+include, without limitation, the pathway network and gene placements, the
+pathway tutorials and evidence timelines, the pan-cancer frequency estimates
+and tumour-type tiers, the hallmark mappings, and the targeted-therapy
+records with their status assignments. These represent substantial
+independent selection, verification, arrangement and expression, and their
+extraction or re-use, including by automated means, is prohibited.
+
+THIRD-PARTY MATERIAL
+
+The copyright above extends only to the author's own work. The following are
+incorporated under their own terms and are NOT claimed by the author:
+
+  D3.js v7.8.5 (docs/vendor/d3.min.js)
+      Copyright 2010-2023 Mike Bostock. ISC Licence.
+      https://github.com/d3/d3/blob/main/LICENSE
+
+  Newsreader, IBM Plex Sans Condensed and IBM Plex Mono (webfonts, loaded
+  from Google Fonts)
+      SIL Open Font License 1.1.
+
+Facts and figures cited from published literature remain attributed to their
+authors; every source is listed with its DOI in the application.
+
+NO WARRANTY
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE WORK OR ITS USE.
+
+NOT MEDICAL ADVICE
+
+The Work is an educational reference. It is not clinical guidance, not a
+diagnostic tool, and not a prescribing resource. Drug approval statuses and
+years are summaries that may be out of date. It must not be relied upon for
+the diagnosis, treatment or management of any person. Clinical decisions
+remain the responsibility of a qualified practitioner applying current local
+guidance.
+
+Enquiries: Saranga Sumathipala, via https://github.com/gsumathipala
